@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 			u = new UserHandler();
 			if (u.verifyUser(user, password)) {
 				getServletContext().setAttribute("user", user);
-				response.sendRedirect("UserPage.jsp");
+				response.sendRedirect("UserArea/User.jsp");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

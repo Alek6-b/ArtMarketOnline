@@ -26,4 +26,11 @@ public class UserHandler {
     		return true;
     	return false;
     }
+    public void registerUser(String user, String password) throws SQLException {
+    	query = con.prepareCall("INSERT INTO Utente(Nome,Password) VALUES (?,?)");
+    	query.setString(1, user);
+    	query.setString(2, password);
+    	query.execute();
+    }
+    	
 }

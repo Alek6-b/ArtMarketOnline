@@ -17,5 +17,6 @@
 Hi <%= user %>!
 <%}%>
 </div>
+<br>
 </body>
 </html>
