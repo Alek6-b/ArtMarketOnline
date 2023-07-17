@@ -3,7 +3,7 @@ package model;
 import java.math.BigDecimal;
 import java.sql.Date;
 
-public class Order {
+public class Order implements Comparable<Order>{
 	int id;
 	String user;
 	Date date;
@@ -37,5 +37,9 @@ public class Order {
 	}
 	public void setPrice(BigDecimal price) {
 		this.price = price;
+	}
+	@Override
+	public int compareTo(Order o) {
+		return this.date.compareTo(date);
 	}
 }
