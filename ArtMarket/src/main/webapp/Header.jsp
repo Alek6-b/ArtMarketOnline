@@ -12,7 +12,7 @@
 <% String user = (String) getServletContext().getAttribute("user");
 	if (user==null) {
 %>
-<a href="Login.jsp">Login</a> or <a href="Register.jsp">Register</a>
+<a href="/ArtMarket/Login.jsp">Login</a> or <a href="/ArtMarket/Register.jsp">Register</a>
 <%} else {%>
 Hi <%= user %>!
 <%}%>

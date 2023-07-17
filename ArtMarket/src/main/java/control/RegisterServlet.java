@@ -35,10 +35,16 @@ public class RegisterServlet extends HttpServlet {
 		UserHandler u;
 		try {
 			u = new UserHandler();
-			u.registerUser(user, password);
-	
-			getServletContext().setAttribute("user", user);
-			response.sendRedirect("Login.jsp");
+			if(!u.checkUser(user)) {
+				u.registerUser(user, password);
+				getServletContext().setAttribute("user", user);
+				response.sendRedirect("Home.jsp");
+			}
+			else {
+				request.setAttribute("Error","Username Taken");
+				getServletContext().getRequestDispatcher("/Register.jsp").forward(request, response);
+
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

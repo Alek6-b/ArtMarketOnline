@@ -19,5 +19,11 @@
 		<input type="submit" value = "Login">
 	</fieldset>
 </form>
+<div id="errorBox">
+	<% String error = (String)request.getAttribute("Error");
+		if (!(error==null)){
+	%><%=error %>
+	<% } %>
+</div>
 </body>
 </html>

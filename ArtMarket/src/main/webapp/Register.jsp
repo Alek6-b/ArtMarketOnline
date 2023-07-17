@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<script src="RegisterValidator.js"></script>
+<script src="scripts/RegisterValidator.js"></script>
 </head>
 <body>
 <%@include file="/Header.jsp" %>
@@ -23,7 +23,12 @@
 		<br>
 		<input type="submit" value = "Register">
 	</fieldset>
-	<div id="errorBox"></div>
+	<div id="errorBox">
+	<%
+		String error = (String)request.getAttribute("Error");
+		if (!(error==null)){
+	%><%=error %>
+	<%} %></div>
 </form>
 
 </body>

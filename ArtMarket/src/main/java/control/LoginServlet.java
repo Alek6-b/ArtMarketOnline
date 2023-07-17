@@ -36,6 +36,10 @@ public class LoginServlet extends HttpServlet {
 				getServletContext().setAttribute("user", user);
 				response.sendRedirect("UserArea/User.jsp");
 			}
+			else {
+				request.setAttribute("Error","Login Failed");
+				getServletContext().getRequestDispatcher("/Login.jsp").forward(request, response);
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

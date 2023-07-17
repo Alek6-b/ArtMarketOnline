@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@include file="/Header.jsp" %>
-	This is <%= user %>'s page!
+<%
 	
-	<a href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>
+%>
 </body>
 </html>
