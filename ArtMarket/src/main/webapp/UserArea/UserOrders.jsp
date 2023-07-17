@@ -12,7 +12,7 @@
 <body>
 	<%@include file="/Header.jsp" %>
 	<table>
-	<tr><td>Codice</td><td>Data</td><td>Prezzo</td></tr>
+	<tr><th>Codice</th><th>Data</th><th>Prezzo</th></tr>
 	<%
 		OrderHandler o = new OrderHandler();
 		ArrayList<Order> result = o.getUserOrders((String) getServletContext().getAttribute("user"));
