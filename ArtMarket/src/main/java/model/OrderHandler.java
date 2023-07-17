@@ -25,7 +25,7 @@ public class OrderHandler {
 	    con = s.getConnection();
 	}
 	public ArrayList<Order> getUserOrders(String user) throws SQLException {
-    	query = con.prepareCall("SELECT * FROM Ordine WHERE Ordine.Utente = ?");
+    	query = con.prepareCall("SELECT * FROM Ordine WHERE Ordine.Utente = ? ORDER BY Ordine.DataOrdine");
     	query.setString(1, user);
     	query.execute();
     	ResultSet rs = query.getResultSet();

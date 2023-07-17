@@ -16,7 +16,6 @@
 	<%
 		OrderHandler o = new OrderHandler();
 		ArrayList<Order> result = o.getUserOrders((String) getServletContext().getAttribute("user"));
-		result.sor
 		for(Order i : result){
 			try{%>
 			<tr><td><%= i.getId() %></td><td><%= i.getDate() %></td><td><%= i.getPrice() %></td></tr>
