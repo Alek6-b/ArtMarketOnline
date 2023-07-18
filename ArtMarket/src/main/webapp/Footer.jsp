@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@include file="/Header.jsp" %>
-	
-		<%@include file="/Footer.jsp" %>
-	
+<footer>©2023 Art Market Online
+<p>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+<p>
+</footer>	
 </body>
 </html>

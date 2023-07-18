@@ -8,8 +8,11 @@
 </head>
 <body>
 	<%@include file="/Header.jsp" %>
-	This is <%= user %>'s page!
+	Benvenuto <%= user %>!
 	
 	<a href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>
+	
+		<%@include file="../Footer.jsp" %>
+	
 </body>
 </html>

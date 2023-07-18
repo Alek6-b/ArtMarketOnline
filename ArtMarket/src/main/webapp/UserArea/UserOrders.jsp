@@ -7,7 +7,7 @@
 <html>
 <head><script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>ArtMarketOnline</title>
 </head>
 <body>
 	<%@include file="/Header.jsp" %>
@@ -25,5 +25,7 @@
 		};
 		 %>
 	</table>
+		<%@include file="../Footer.jsp" %>
+	
 </body>
 </html>
