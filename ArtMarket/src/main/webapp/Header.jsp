@@ -14,7 +14,7 @@
 %>
 <a href="/ArtMarket/Login.jsp">Login</a> or <a href="/ArtMarket/Register.jsp">Register</a>
 <%} else {%>
-Hi <%= user %>!
+Hi <a href="/ArtMarket/UserArea/User.jsp"><%= user %></a>!
 <%}%>
 </div>
 <br>

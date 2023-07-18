@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head><script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>

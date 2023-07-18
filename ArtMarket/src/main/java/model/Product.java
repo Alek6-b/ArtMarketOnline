@@ -3,38 +3,37 @@ package model;
 import java.math.BigDecimal;
 
 public class Product {
-	public Product(Piece o, Format f, BigDecimal p) {
+	public Product(int opera, String formato, BigDecimal prezzo) {
 		super();
-		this.o = o;
-		this.f = f;
-		this.p = p;
+		this.piece = opera;
+		this.format = formato;
+		this.price = prezzo;
 	}
 	int id;
-	Piece o;
-	Format f;
-	BigDecimal p;
+	int piece;
+	String format;
+	BigDecimal price;
+	public int getPiece() {
+		return piece;
+	}
+	public void setPiece(int piece) {
+		this.piece = piece;
+	}
+	public String getFormat() {
+		return format;
+	}
+	public void setFormat(String format) {
+		this.format = format;
+	}
+	public BigDecimal getPrice() {
+		return price;
+	}
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
 	public int getId() {
 		return id;
 	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public Piece getO() {
-		return o;
-	}
-	public void setO(Piece o) {
-		this.o = o;
-	}
-	public Format getF() {
-		return f;
-	}
-	public void setF(Format f) {
-		this.f = f;
-	}
-	public BigDecimal getP() {
-		return p;
-	}
-	public void setP(BigDecimal p) {
-		this.p = p;
-	}
+	
+	
 }
