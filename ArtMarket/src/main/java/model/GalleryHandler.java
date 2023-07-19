@@ -3,10 +3,10 @@ package model;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class GalleryGetter {
+public class GalleryHandler {
 	Connection con = new DataSourceHandler("jdbc:mysql://localhost:3306/artmarketonline", "ArtMarketOnlineManager", "Prodotti").getConnection();
 
-	public GalleryGetter() throws SQLException{
-		
+	public GalleryHandler() throws SQLException{
+		super();
 	}
 }

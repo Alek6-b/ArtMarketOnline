@@ -1,12 +1,12 @@
 @charset "ISO-8859-1";
 
 body{	
-	background-color: #000000;
+	background-color: #0A0A0A;
 	padding: 0px;
   	margin:0px;
    	font-family: Verdana, Geneva, sans-serif;
   	line-height: 1.2em;
-  	color: #fcf8f9;
+  	color: #ffffff;
   	  	
 }
 
@@ -42,7 +42,7 @@ nav ul {
   padding:10px;
   list-style: none;
   color: #9a5ecb;
-  background-color: #000000;
+  background-color: #0A0A0A;
   overflow: hidden;  
   
 }
@@ -56,7 +56,7 @@ nav li {
 
 #page nav ul{
 	
-	background-color: #1d1d1d;
+	background-color: #252525;
 	
 }
 
@@ -80,7 +80,7 @@ input li{
   }
   
   footer{
-	background-color: #1d1d1d;
+	background-color: #252525;
 	margin:100;
 	color: #9a5ecb;
 	padding:5px;
