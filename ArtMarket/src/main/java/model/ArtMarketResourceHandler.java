@@ -6,6 +6,6 @@ import java.sql.SQLException;
 public class ArtMarketResourceHandler {
 	Connection con;
 	ArtMarketResourceHandler() throws SQLException{
-		new DataSourceHandler("jdbc:mysql://localhost:3306/artmarketonline", "ArtMarketOnlineManager", "Prodotti").getConnection();
+		con = new DataSourceHandler("jdbc:mysql://localhost:3306/artmarketonline", "ArtMarketOnlineManager", "Prodotti").getConnection();
 	}
 }

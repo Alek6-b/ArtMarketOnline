@@ -3,6 +3,8 @@
     import="model.PieceHandler,model.Piece"%>
 
 <jsp:useBean id="pieceHandler" class="model.PieceHandler"></jsp:useBean>
+<jsp:useBean id="piece" class="model.Piece"></jsp:useBean>
+
     
 <!DOCTYPE html>
 <html>
@@ -13,15 +15,13 @@
 <body>
 	<%@include file="/Header.jsp" %>
 	<%
-		String idString = request.getParameter("piece");
-		if (idString == null){
-			response.sendRedirect("/ArtMarket/Home.jsp");
-		}
-		int pieceId = Integer.parseInt(idString);
-		Piece p = pieceHandler.getPiece(pieceId);
+	String idString = request.getParameter("piece");
+	int pieceId = Integer.parseInt(idString);
+	piece = pieceHandler.getPiece(pieceId);
 	%>
+	<h1 id="titoloOpera"><%= piece.getTitle() %></h1>
 	<div id="operaSelezionata">
-	<img alt="" src=<%= p.getImageSource() %>>
+	<img alt=<%= piece.getTitle() %> src=<%= piece.getImageSource() %>>
 	</div>
 	
 	

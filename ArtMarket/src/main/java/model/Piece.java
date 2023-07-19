@@ -1,6 +1,9 @@
 package model;
 
 public class Piece {
+	public Piece() {
+		super();
+	}
 	int id;
 	String title;
 	String author;
@@ -12,6 +15,7 @@ public class Piece {
 		this.author = author;
 		this.imageSource = imageSource;
 	}
+	
 	public int getId() {
 		return id;
 	}

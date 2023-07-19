@@ -12,6 +12,7 @@ public class PieceHandler extends ArtMarketResourceHandler {
 	public Piece getPiece(int id) throws SQLException {
 		PreparedStatement query = con.prepareStatement("SELECT * FROM Opera WHERE Opera.Codice = ?");
 		query.setInt(1, id);
+		query.execute();
 		ResultSet rs = query.getResultSet();
 		
 		if (rs.next()) {

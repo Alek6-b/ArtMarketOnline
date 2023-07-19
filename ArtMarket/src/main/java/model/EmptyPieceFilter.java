@@ -1,6 +1,8 @@
 package model;
 
 import java.io.IOException;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -10,16 +12,17 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
 
-@WebFilter(filterName = "userFilter", urlPatterns="/UserArea/*")
-public class UserFilter implements Filter{
+@WebFilter(filterName = "emptyPieceFilter", urlPatterns="/Piece.jsp")
+
+public class EmptyPieceFilter implements Filter  {
 
 	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
 			throws IOException, ServletException {
 		HttpServletResponse res = (HttpServletResponse) arg1;
-		String user = (String) arg0.getServletContext().getAttribute("user");
-		if (user==null)
-			res.sendRedirect("/ArtMarket/Login.jsp");
-		arg2.doFilter(arg0, arg1);
+		if (arg0.getParameter("piece")==null)
+			res.sendRedirect("/ArtMarket/Home.jsp");
+		else
+			arg2.doFilter(arg0, arg1);
 	}
 	
 }
