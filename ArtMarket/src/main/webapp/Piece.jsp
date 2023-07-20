@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"
-    import="model.PieceHandler,model.Piece,model.ProductHandler,model.Product"%>
+    import="model.PieceHandler,model.Piece,model.ProductHandler,model.Product,java.util.ArrayList"%>
 
 <jsp:useBean id="pieceHandler" class="model.PieceHandler"></jsp:useBean>
 <jsp:useBean id="piece" class="model.Piece"></jsp:useBean>
@@ -15,6 +15,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>ArtMarketOnline</title>
+<script type="text/javascript" src="scripts/PieceInfoDisplayer.js"></script>
+
 </head>
 <body>
 	<%@include file="/Header.jsp" %>
@@ -30,8 +32,17 @@
 			<img alt=<%= piece.getTitle() %> src=<%= piece.getImageSource() %>>
 			</div>
 		<div>
-			<select name="selectProduct" id="selectProduct"></select>
+			<%
+				ArrayList<Product> prods = productHandler.getPieceProducts(pieceId);
+			%>
+			<select name="selectProduct" id="selectProduct" onchange="func(this.value)">
+				<% for (Product i : prods){%>
+					<option value=<%= i.getId() %>><%= i.getFormat() %></option>
+				<% }
+				%>
+			</select>
 		</div>
+		<div id="productDisplay"></div>
 	
 	</div>
 
