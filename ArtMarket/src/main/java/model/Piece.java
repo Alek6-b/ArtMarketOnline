@@ -2,7 +2,6 @@ package model;
 
 public class Piece {
 	public Piece() {
-		super();
 	}
 	int id;
 	String title;

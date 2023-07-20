@@ -3,6 +3,9 @@ package model;
 import java.math.BigDecimal;
 
 public class Product {
+	public Product() {
+		
+	}
 	public Product(int opera, String formato, BigDecimal prezzo) {
 		super();
 		this.piece = opera;

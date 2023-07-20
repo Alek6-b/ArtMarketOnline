@@ -34,8 +34,14 @@
 <div id="page">
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Categorie</a></li>
+				<li><a href="ArtMarket/Home.jsp">Home</a></li>
+				<li>
+				
+				<div class="dropdown">Categorie
+					<div class="dropdown-content">Hii???</div>
+				</div>
+				
+				</li>
 				<li><a href="#">Chi siamo</a></li>
 				<li><form>
   <input class="search" type="search" placeholder="Cerca">

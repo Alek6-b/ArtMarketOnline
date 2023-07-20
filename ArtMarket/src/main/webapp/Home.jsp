@@ -8,6 +8,7 @@
 </head>
 <body>
 	<%@include file="/Header.jsp" %>
+	<a href="/ArtMarket/Piece.jsp?piece=1">test piece</a>
 	<%@include file="/Footer.jsp" %>
 
 </body>

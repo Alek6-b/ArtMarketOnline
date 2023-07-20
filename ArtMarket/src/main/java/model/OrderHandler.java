@@ -17,7 +17,7 @@ public class OrderHandler extends ArtMarketResourceHandler{
     	ResultSet rs = query.getResultSet();
     	ArrayList<Order> output = new ArrayList<Order>();
     	while(rs.next()){
-    		output.add(new Order(rs.getInt(1), user, rs.getDate(3), rs.getBigDecimal(4)));
+    		output.add(new Order(rs.getInt(1), user, rs.getDate(3), rs.getBigDecimal(4),rs.getString(5)));
     	}
 		return output;
 	}
@@ -29,8 +29,10 @@ public class OrderHandler extends ArtMarketResourceHandler{
     	
     	//calcola prezzo
     	BigDecimal sum = deliveryFee;
+    	String desc = "";
     	for(CartItem i : cart) {
     		sum.add(i.getProduct().getPrice());
+    		desc+=i.toString()+"\n";
     	}
     	
     	orderQuery.setBigDecimal(2, sum);
