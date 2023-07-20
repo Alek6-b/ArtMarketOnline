@@ -8,7 +8,6 @@ public class Piece {
 	String author;
 	String imageSource;
 	public Piece(int id, String title, String author, String imageSource) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.author = author;
