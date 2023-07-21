@@ -3,11 +3,13 @@ package control;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import model.UserHandler;
 
@@ -33,7 +35,9 @@ public class LoginServlet extends HttpServlet {
 		try {
 			u = new UserHandler();
 			if (u.verifyUser(user, password)) {
-				getServletContext().setAttribute("user", user);
+				HttpSession ss = request.getSession(true);
+				ss.setAttribute("user", user);
+				ss.setAttribute("admin", u.isAdmin(user));
 				response.sendRedirect("UserArea/User.jsp");
 			}
 			else {

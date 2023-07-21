@@ -68,7 +68,8 @@ FOREIGN KEY (Prodotto) REFERENCES Prodotto(Codice),
 PRIMARY KEY (Ordine,Prodotto)
 );
 INSERT INTO Utente(Nome,Password) VALUES ("Tizio","Test");
-
+INSERT INTO Utente(Nome,Password) VALUES ("Caio","Toast");
+INSERT INTO Utente(Nome,Password,Admin) VALUES ("Boss","Big",true);
 
 INSERT INTO Formato VALUES ("TelaGrande", "80x60", "Tela");
 INSERT INTO Formato VALUES ("TelaPiccola", "40x30", "Tela");
@@ -85,6 +86,11 @@ INSERT INTO Opera(Titolo,UrlImmagine) VALUES ("Saiyan", "/ArtMarket/images/img5.
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Winter", "/ArtMarket/images/img6.png");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Magic", "/ArtMarket/images/img7.png");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Ocean", "/ArtMarket/images/img8.png");
+
+INSERT INTO Tag(Opera,Categoria) VALUES (1,"Place");
+INSERT INTO Tag(Opera,Categoria) VALUES (2,"Place");
+INSERT INTO Tag(Opera,Categoria) VALUES (4,"Place");
+INSERT INTO Tag(Opera,Categoria) VALUES (8,"Place");
 
 
 

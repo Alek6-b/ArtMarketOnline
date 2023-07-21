@@ -24,18 +24,21 @@ public class OrderHandler extends ArtMarketResourceHandler{
 	
 	
 	public void makeOrder(String user, ArrayList<CartItem> cart, BigDecimal deliveryFee) throws SQLException {
-    	PreparedStatement orderQuery = con.prepareStatement("INSERT INTO Order(Utente,Prezzo) VALUES (?,?)");
+    	PreparedStatement orderQuery = con.prepareStatement("INSERT INTO Order(Utente,Prezzo,Descrizione) VALUES (?,?,?)");
     	orderQuery.setString(1, user);
     	
     	//calcola prezzo
     	BigDecimal sum = deliveryFee;
     	String desc = "";
     	for(CartItem i : cart) {
-    		sum.add(i.getProduct().getPrice());
+    		BigDecimal a = i.getProduct().getPrice();
+    		int b = i.getQuantity();
+    		sum.add(a.multiply(BigDecimal.valueOf(b)));
     		desc+=i.toString()+"\n";
     	}
     	
     	orderQuery.setBigDecimal(2, sum);
+    	orderQuery.setString(3, desc);
     	orderQuery.execute();
     	ResultSet rs = orderQuery.getGeneratedKeys();
     	rs.next();

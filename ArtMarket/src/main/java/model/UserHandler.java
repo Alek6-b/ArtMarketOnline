@@ -17,7 +17,7 @@ public class UserHandler extends ArtMarketResourceHandler {
     	ResultSet rs = query.getResultSet();
     	return rs.next();
     }
-    public boolean verifyUser(String user, String password) throws SQLException {
+    public Boolean verifyUser(String user, String password) throws SQLException {
     	PreparedStatement query = con.prepareCall("SELECT Password FROM Utente WHERE Utente.Nome = ?");
     	query.setString(1, user);
     	query.execute();
@@ -25,6 +25,16 @@ public class UserHandler extends ArtMarketResourceHandler {
     	if (rs.next()&&rs.getString(1).equals(password))
     		return true;
     	return false;
+    }
+    public Boolean isAdmin(String user) throws SQLException {
+    	PreparedStatement query = con.prepareCall("SELECT Admin FROM Utente WHERE Utente.Nome = ?");
+    	query.setString(1, user);
+    	query.execute();
+    	ResultSet rs = query.getResultSet();
+    	if (rs.next()&&rs.getBoolean(1))
+    		return true;
+    	return false;
+
     }
     public void registerUser(String user, String password) throws SQLException {
     	PreparedStatement query = con.prepareCall("INSERT INTO Utente(Nome,Password) VALUES (?,?)");

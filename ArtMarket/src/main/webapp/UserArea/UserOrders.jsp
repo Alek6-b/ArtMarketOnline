@@ -14,7 +14,7 @@
 	<table>
 	<tr><th>Codice</th><th>Data</th><th>Prezzo</th></tr>
 	<%
-		ArrayList<Order> result = orderHandler.getUserOrders((String) getServletContext().getAttribute("user"));
+		ArrayList<Order> result = orderHandler.getUserOrders((String) request.getSession().getAttribute("user"));
 		for(Order i : result){
 			try{%>
 			<tr><td><%= i.getId() %></td><td><%= i.getDate() %></td><td><%= i.getPrice() %></td></tr>
