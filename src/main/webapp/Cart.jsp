@@ -25,6 +25,7 @@
 	<%} %>
 	<%@include file="/Footer.jsp" %>
 	</table>
+	<a href="/ArtMarket/OrderMakerServlet">Conferma Ordine</a>
 
 </body>
 </html>

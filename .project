@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ArtMarketOnline</name>
+	<name>ArtMarket</name>
 	<comment></comment>
 	<projects>
-		<project>Servers</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

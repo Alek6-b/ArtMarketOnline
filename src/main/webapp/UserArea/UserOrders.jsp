@@ -13,9 +13,9 @@
 	<%@include file="/Header.jsp" %>
 	<table>
 	<caption>Orders</caption>
-	<tr><th>Codice</th><th>Data</th><th>Prezzo</th></tr>
+	<tr><th>Codice</th><th>Data</th><th>Prezzo</th><th>Descrizione</th></tr>
 	<%
-		ArrayList<Order> result = orderHandler.getUserOrders((String) request.getSession().getAttribute("user"));
+		ArrayList<Order> result = (ArrayList<Order>) orderHandler.getUserOrders((String) request.getSession().getAttribute("user"));
 		for(Order i : result){
 			try{%>
 			<tr><td><%= i.getId() %></td><td><%= i.getDate() %></td><td><%= i.getPrice() %></td></tr>
