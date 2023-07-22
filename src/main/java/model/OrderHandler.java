@@ -25,7 +25,7 @@ public class OrderHandler extends ArtMarketResourceHandler{
 	
 	
 	public void makeOrder(String user, List<CartItem> cart, BigDecimal deliveryFee) throws SQLException {
-		try(    	PreparedStatement orderQuery = con.prepareStatement("INSERT INTO Order(Utente,Prezzo,Descrizione) VALUES (?,?,?)");
+		try(    	PreparedStatement orderQuery = con.prepareStatement("INSERT INTO Ordine(Utente,Prezzo,Descrizione) VALUES (?,?,?)",PreparedStatement.RETURN_GENERATED_KEYS);
 		    	PreparedStatement includeQuery = con.prepareStatement("INSERT INTO Include(Ordine,Prodotto) VALUES (?,?)");){
 
     	orderQuery.setString(1, user);
@@ -39,7 +39,6 @@ public class OrderHandler extends ArtMarketResourceHandler{
     		sum = sum.add(a.multiply(BigDecimal.valueOf(b)));
     		desc+=i.toString();
     	}
-    	
     	orderQuery.setBigDecimal(2, sum);
     	orderQuery.setString(3, desc);
     	orderQuery.execute();

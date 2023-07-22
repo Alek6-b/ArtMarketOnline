@@ -41,6 +41,7 @@ public class OrderMakerServlet extends HttpServlet {
 				OrderHandler o = new OrderHandler();
 				ArrayList<CartItem> cart= (ArrayList<CartItem>) session.getAttribute("cart");
 				o.makeOrder(user, cart);
+				response.sendRedirect("/ArtMarket/UserArea/UserOrders.jsp");
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
