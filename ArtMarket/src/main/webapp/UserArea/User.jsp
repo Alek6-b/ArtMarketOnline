@@ -9,9 +9,14 @@
 <body>
 	<%@include file="/Header.jsp" %>
 	Benvenuto <%= user %>!
-	
-	<a href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>
-	
+	<br>
+	<% if ((boolean) request.getSession().getAttribute("admin")){%>
+	<a href="/ArtMarket/UserArea/AdminArea/Admin.jsp">Go to Admin Page</a>
+	<%	
+	}
+	%>
+
+	<a href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>	
 		<%@include file="../Footer.jsp" %>
 	
 </body>

@@ -6,20 +6,20 @@ public class Product {
 	public Product() {
 		
 	}
-	public Product(int opera, String formato, BigDecimal prezzo) {
+	public Product(Piece opera, String formato, BigDecimal prezzo) {
 		super();
 		this.piece = opera;
 		this.format = formato;
 		this.price = prezzo;
 	}
 	int id;
-	int piece;
+	Piece piece;
 	String format;
 	BigDecimal price;
-	public int getPiece() {
+	public Piece getPiece() {
 		return piece;
 	}
-	public void setPiece(int piece) {
+	public void setPiece(Piece piece) {
 		this.piece = piece;
 	}
 	public String getFormat() {

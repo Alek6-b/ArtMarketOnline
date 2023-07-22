@@ -32,6 +32,8 @@
 			<img alt=<%= piece.getTitle() %> src=<%= piece.getImageSource() %>>
 			</div>
 		<div>
+		
+		<form action="AddCartServlet" method="post">
 			<%
 				ArrayList<Product> prods = productHandler.getPieceProducts(pieceId);
 			%>
@@ -41,6 +43,9 @@
 				<% }
 				%>
 			</select>
+			<input type="number" min=1 value=1>
+			<input type="submit" value="Aggiungi">
+		</form>
 		</div>
 		<div id="productDisplay"></div>
 	

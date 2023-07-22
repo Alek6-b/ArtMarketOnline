@@ -1,5 +1,6 @@
+<%@page import="org.eclipse.jdt.internal.compiler.ast.ThisReference"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"     import="model.CartItem,java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,16 @@
 <link rel="stylesheet" href="/ArtMarket/styles/mainStyle.css" type="text/css">
 <script src="https://kit.fontawesome.com/b99c5b4502.js" crossorigin="anonymous"></script>
 <meta charset="ISO-8859-1">
+
 </head>
 <body>
+<%
+  	ArrayList<CartItem> cart = (ArrayList<CartItem>) request.getSession().getAttribute("cart");
+  	if (cart==null)
+  		cart = new ArrayList<CartItem>();
+  		request.getSession().setAttribute("cart", cart);
+  	%>
+
 
 <header>
 <div id="header">
@@ -16,15 +25,16 @@
 			<ul>
 				<li><img src="/ArtMarket/images/logoTsw0.png"></li>
 				<li class="head">
-				<% String user = (String) getServletContext().getAttribute("user");
+				<% String user = (String) request.getSession().getAttribute("user");
 					if (user==null) {
 				%>
 				<a href="/ArtMarket/Login.jsp">Accedi</a></li>
 				<li><a href="/ArtMarket/Register.jsp">Registrati</a></li>
 				<%} else {%>
 				<li>Hi <a href="/ArtMarket/UserArea/User.jsp"><%= user %></a>!</li>
+				<li><li>
 				<%}%>
-				<li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"></i></a></li>
+				<li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a></li>
 				
 			</ul>
 		</nav>
@@ -34,7 +44,7 @@
 <div class="page">
 		<nav>
 			<ul>
-				<li><a href="ArtMarket/Home.jsp">Home</a></li>
+				<li><a href="/ArtMarket/Home.jsp">Home</a></li>
 				<li>
 				
 				<div class="dropdown">
