@@ -32,7 +32,7 @@
 				<li><a href="/ArtMarket/Register.jsp">Registrati</a></li>
 				<%} else {%>
 				<li>Hi <a href="/ArtMarket/UserArea/User.jsp"><%= user %></a>!</li>
-				<li><li>
+				<li><a href="LogoutServlet">Logout</a><li>
 				<%}%>
 				<li><a href="/ArtMarket/Cart.jsp"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a></li>
 				
