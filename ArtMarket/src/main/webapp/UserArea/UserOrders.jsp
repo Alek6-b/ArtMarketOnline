@@ -12,6 +12,7 @@
 <body>
 	<%@include file="/Header.jsp" %>
 	<table>
+	<caption>Orders</caption>
 	<tr><th>Codice</th><th>Data</th><th>Prezzo</th></tr>
 	<%
 		ArrayList<Order> result = orderHandler.getUserOrders((String) request.getSession().getAttribute("user"));

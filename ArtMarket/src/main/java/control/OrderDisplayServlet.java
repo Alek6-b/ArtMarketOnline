@@ -19,7 +19,6 @@ public class OrderDisplayServlet extends HttpServlet {
      */
     public OrderDisplayServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**

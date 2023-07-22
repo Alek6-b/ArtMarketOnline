@@ -7,21 +7,23 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>ArtMarketOnline</title>
 </head>
 <body>
 	<%@include file="/Header.jsp" %>
-	<div> Test
+	<div class="gallery">
 	<%
 		String tag = request.getParameter("tag");
 	%>
 		<h1><%= tag %></h1>
 	<%
-		ArrayList<Piece> pieces = galleryHandler.getGallery("tag");%>
+		ArrayList<Piece> pieces = (ArrayList<Piece>) galleryHandler.getGallery(tag);%>
+		<h2>		<%= pieces.size() %> pezzi.
+		</h2>
 		<%
 		for (Piece i : pieces){
 			%>
-			<img alt=<%= i.getTitle() %> src=<%= i.getImageSource() %>>
+			<a href="/ArtMarket/Piece.jsp?piece=<%= i.getId()  %>"><img alt=<%= i.getTitle() %> src=<%= i.getImageSource() %>></a>
 			<%
 		}
 	%>

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.CartItem;
+import model.ProductHandler;
 
 /**
  * Servlet implementation class AddCartServlet
@@ -23,18 +24,25 @@ public class AddCartServlet extends HttpServlet {
      */
     public AddCartServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 
+    @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		@SuppressWarnings("unchecked")
 		ArrayList<CartItem> cart = 	(ArrayList<CartItem>) request.getSession().getAttribute("cart");
-		
-		cart.add()
-
+		try {
+			ProductHandler p = new ProductHandler();
+			int productId = Integer.parseInt(request.getParameter("selectProduct"));
+			int quantity = Integer.parseInt(request.getParameter("quantity"));
+			cart.add(new CartItem(p.getProduct(productId),quantity));
+			response.sendRedirect("/ArtMarket/Cart.jsp");
+		} catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 
 }

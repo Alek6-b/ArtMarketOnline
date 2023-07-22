@@ -87,10 +87,10 @@ INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Winter", "/ArtMarket/images/img6
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Magic", "/ArtMarket/images/img7.png");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Ocean", "/ArtMarket/images/img8.png");
 
-INSERT INTO Tag(Opera,Categoria) VALUES (1,"Place");
-INSERT INTO Tag(Opera,Categoria) VALUES (2,"Place");
-INSERT INTO Tag(Opera,Categoria) VALUES (4,"Place");
-INSERT INTO Tag(Opera,Categoria) VALUES (8,"Place");
+INSERT INTO Tag(Opera,Categoria) VALUES (1,"Fantasy");
+INSERT INTO Tag(Opera,Categoria) VALUES (2,"Fantasy");
+INSERT INTO Tag(Opera,Categoria) VALUES (4,"Fantasy");
+INSERT INTO Tag(Opera,Categoria) VALUES (8,"Fantasy");
 
 
 

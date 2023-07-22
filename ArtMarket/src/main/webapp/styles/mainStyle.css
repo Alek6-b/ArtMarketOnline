@@ -9,7 +9,9 @@ body{
   	color: #ffffff;
   	  	
 }
-
+legend{
+	color: #ffffff;
+}
 header img{	
 	display: inline;
 	margin-right: 50px;	

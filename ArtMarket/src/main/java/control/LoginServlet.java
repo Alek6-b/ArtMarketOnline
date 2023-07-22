@@ -25,7 +25,6 @@ public class LoginServlet extends HttpServlet {
      */
     public LoginServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,7 +33,7 @@ public class LoginServlet extends HttpServlet {
 		UserHandler u;
 		try {
 			u = new UserHandler();
-			if (u.verifyUser(user, password)) {
+			if (u.verifyUser(user, password).booleanValue()) {
 				HttpSession ss = request.getSession(true);
 				ss.setAttribute("user", user);
 				ss.setAttribute("admin", u.isAdmin(user));
@@ -44,8 +43,7 @@ public class LoginServlet extends HttpServlet {
 				request.setAttribute("Error","Login Failed");
 				getServletContext().getRequestDispatcher("/Login.jsp").forward(request, response);
 			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		

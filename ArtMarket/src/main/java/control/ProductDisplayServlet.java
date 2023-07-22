@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import model.Piece;
 import model.Product;
 import model.ProductHandler;
-import net.sf.json.JSONObject;
 
 /**
  * Servlet implementation class ProductDisplayServlet
@@ -28,7 +27,6 @@ public class ProductDisplayServlet extends HttpServlet {
      */
     public ProductDisplayServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException{
@@ -52,6 +50,11 @@ public class ProductDisplayServlet extends HttpServlet {
 
     }
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		processRequest(request,response);
+		try {
+			processRequest(request,response);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

@@ -6,8 +6,8 @@ public class Product {
 	public Product() {
 		
 	}
-	public Product(Piece opera, String formato, BigDecimal prezzo) {
-		super();
+	public Product(int id,Piece opera, String formato, BigDecimal prezzo) {
+		this.id=id;
 		this.piece = opera;
 		this.format = formato;
 		this.price = prezzo;

@@ -24,7 +24,7 @@ public class UserFilter implements Filter{
 		if (path.contains("/UserArea/") && admin==null) {
 			res.sendRedirect("/ArtMarket/Login.jsp");
 		}
-		if (path.contains("/AdminArea/")&&(!admin||admin==null))
+		if (path.contains("/AdminArea/")&&(admin==null||!admin))
 			res.sendRedirect("/ArtMarket/");
 		
 		arg2.doFilter(arg0, arg1);

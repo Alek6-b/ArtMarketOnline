@@ -2,25 +2,30 @@ package model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.*;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class GalleryHandler {
-	Connection con = new DataSourceHandler("jdbc:mysql://localhost:3306/artmarketonline", "ArtMarketOnlineManager", "Prodotti").getConnection();
+	Connection con = new DataSourceHandler("jdbc:mysql://localhost:3306/artmarketonline", "ArtMarketOnlineManager",
+			"Prodotti").getConnection();
 
-	public GalleryHandler() throws SQLException{
+	public GalleryHandler() throws SQLException {
 		super();
 	}
-	
-	public ArrayList<Piece> getGallery(String tag) throws SQLException{
-		PreparedStatement query = con.prepareCall("SELECT * FROM (Opera INNER JOIN Tag ON Opera.Codice = Tag.Opera) WHERE Tag.Categoria = ?");
-		query.setString(1, tag);
-		query.execute();
-		ResultSet rs = query.getResultSet();
-		ArrayList<Piece> out = new ArrayList<Piece>();
-		while(rs.next())
-			out.add(new Piece(rs.getInt("Codice"),rs.getString("Titolo"),rs.getString("Autore"),rs.getString("UrlImmagine")));
-		return out;	
+
+	public List<Piece> getGallery(String tag) throws SQLException {
+		try (PreparedStatement query = con.prepareCall(
+				"SELECT * FROM Tag WHERE Tag.Categoria = ?")) {
+			query.setString(1, tag);
+			query.execute();
+			PieceHandler p= new PieceHandler();
+			ResultSet rs = query.getResultSet();
+			ArrayList<Piece> out = new ArrayList<>();
+			while (rs.next())
+				out.add(p.getPiece(rs.getInt("Opera")));
+			return out;
+		}
 	}
 }

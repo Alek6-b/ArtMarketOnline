@@ -23,7 +23,7 @@
 <div id="header">
 		<nav>
 			<ul>
-				<li><img src="/ArtMarket/images/logoTsw0.png"></li>
+				<li><img src="/ArtMarket/images/logoTsw0.png" alt="Homepage"></li>
 				<li class="head">
 				<% String user = (String) request.getSession().getAttribute("user");
 					if (user==null) {
@@ -34,7 +34,7 @@
 				<li>Hi <a href="/ArtMarket/UserArea/User.jsp"><%= user %></a>!</li>
 				<li><li>
 				<%}%>
-				<li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a></li>
+				<li><a href="/ArtMarket/Cart.jsp"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a></li>
 				
 			</ul>
 		</nav>
@@ -50,11 +50,11 @@
 				<div class="dropdown">
 					<button class="drop">Categorie</button>
 					<div class="dropdown-content">
-						<a href="#">Fantasy</a>
-						<a href="#">Nature</a>
-						<a href="#">Animals</a>
-						<a href="#">World</a>
-						<a href="#">Pop Culture</a>
+						<a href="/ArtMarket/Gallery.jsp?tag=Fantasy">Fantasy</a>
+						<a href="/ArtMarket/Gallery.jsp?tag=Nature">Nature</a>
+						<a href="/ArtMarket/Gallery.jsp?tag=Animals">Animals</a>
+						<a href="/ArtMarket/Gallery.jsp?tag=World">World</a>
+						<a href="/ArtMarket/Gallery.jsp?tag=PopCulture">Pop Culture</a>
 					</div>
 				</div>
 				

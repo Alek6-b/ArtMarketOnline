@@ -22,10 +22,12 @@ public class PieceHandler extends ArtMarketResourceHandler {
 	}
 	
 	public void makePiece(Piece p) throws SQLException {
-		PreparedStatement query = con.prepareStatement("INSERT INTO Opera(Titolo, Autore, UrlImmagine) VALUES (?,?,?)");
-		query.setString(1, p.getTitle());
-		query.setString(2, p.getAuthor());
-		query.setString(3, p.getImageSource());
-		query.execute();
+		try(PreparedStatement query = con.prepareStatement("INSERT INTO Opera(Titolo, Autore, UrlImmagine) VALUES (?,?,?)")){
+			query.setString(1, p.getTitle());
+			query.setString(2, p.getAuthor());
+			query.setString(3, p.getImageSource());
+			query.execute();
+		}
 	}
 }
+
