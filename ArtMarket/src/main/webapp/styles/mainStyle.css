@@ -18,23 +18,25 @@ header img{
 input{
 	
     height: 30px;
-	margin-left:550px;
+	margin-left:620px;
 	border:none;
 	align-items:center;
 }
+
 
 i{	
 	right: 10px;
 }
 
 .head{
-	margin-left:550px;
+	margin-left:600px;
+	 font-weight: bold;  
 	
 }
 header nav li{
   float: left;
   display: block;
-  
+
 }
 	
 nav ul {
@@ -43,8 +45,58 @@ nav ul {
   list-style: none;
   color: #9a5ecb;
   background-color: #0A0A0A;
-  overflow: hidden;  
-  
+  overflow: hidden;    
+}
+
+#login input[type=text]{
+	display: inline-block;
+	height:30px;
+	margin: 8px 15px;
+	text-align:left;	
+}
+
+#login input[type=password]{
+	display: inline-block;
+	height:30px;
+	margin: 8px 20px;
+	text-align:left;	
+}
+
+#login input[type=submit]{
+	display: inline-block;
+	height:30px;
+	margin: 8px 100px;
+	text-align:left;
+}
+
+
+.register input[type=text]{
+	display: inline-block;
+	height:30px;
+	margin: 8px 85px;
+	text-align:left;
+}
+
+
+.register input[type=password]{
+	display: inline-block;
+	height:30px;
+	margin: 8px 20px;
+	text-align:left;	
+}
+
+#pass{
+	display: inline-block;
+	height:30px;
+	margin: 8px 90px;
+	text-align:left;	
+}
+
+.register input[type=submit]{
+	display: inline-block;
+	height:30px;
+	margin: 8px 169px;
+	text-align:left;	
 }
 
 nav li {
@@ -54,18 +106,21 @@ nav li {
   font-size:1.2em;
 }
 
-#page nav ul{
-	
+.page nav ul{
+	overflow:hidden;
 	background-color: #252525;
 	
 }
 
-nav a {
+.page nav a{
   display: block;
   color: #9a5ecb;
   text-decoration: none;
+  text-align:center;
   padding: 10px;
   font-weight: bold;
+  font-size:15px;
+  
 }
 
 input li{
@@ -76,7 +131,7 @@ input li{
   }
   
   section{
-  	padding: 170px;
+  	padding: 200px;
   }
   
   footer{
@@ -89,18 +144,38 @@ input li{
 	width: 100%;
 }
 
+button{
+	color: #9a5ecb;
+	font-size:15px;
+	border:0px;
+	background-color: #252525;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 10px 8px;
+}
 .dropdown{
-	display: inline-block;
-	position: relative;
+	float:left;
+	overflow:hidden;
+	
 }
 
 .dropdown-content{
 	display: none;
 	position: absolute;
-	
-	padding: 10px;
+	min-width: 150px;
 	z-index: 1;
+	background-color: #ffffff;
 	
+}
+
+
+.dropdown-content a{
+	display: block;
+	float: none;
+	text-align: left;
+	padding: 10px 24px;
+	*z-index: 1;
+	background-color: #ffffff;
 }
 
 .dropdown:hover .dropdown-content{

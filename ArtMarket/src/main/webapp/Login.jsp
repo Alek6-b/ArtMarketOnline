@@ -8,7 +8,7 @@
 </head>
 <body>
 <%@include file="/Header.jsp" %>
-<form action="LoginServlet" method="post">
+<form id="login" action="LoginServlet" method="post">
 	<fieldset>
 		<label for="username">Username</label>
 		<input type="text" id="username" name="username" required>

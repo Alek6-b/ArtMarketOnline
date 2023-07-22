@@ -14,7 +14,7 @@
 <div id="header">
 		<nav>
 			<ul>
-				<li><img src="/ArtMarket/images/logoTsw1.png"></li>
+				<li><img src="/ArtMarket/images/logoTsw0.png"></li>
 				<li class="head">
 				<% String user = (String) getServletContext().getAttribute("user");
 					if (user==null) {
@@ -31,14 +31,21 @@
 		
 </div>
 
-<div id="page">
+<div class="page">
 		<nav>
 			<ul>
 				<li><a href="ArtMarket/Home.jsp">Home</a></li>
 				<li>
 				
-				<div class="dropdown">Categorie
-					<div class="dropdown-content">Hii???</div>
+				<div class="dropdown">
+					<button class="drop">Categorie</button>
+					<div class="dropdown-content">
+						<a href="#">Fantasy</a>
+						<a href="#">Nature</a>
+						<a href="#">Animals</a>
+						<a href="#">World</a>
+						<a href="#">Pop Culture</a>
+					</div>
 				</div>
 				
 				</li>

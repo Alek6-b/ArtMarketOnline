@@ -2,7 +2,6 @@ package control;
 
 import java.io.IOException;
 import org.json.*;
-
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
@@ -15,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Piece;
 import model.Product;
 import model.ProductHandler;
+import net.sf.json.JSONObject;
 
 /**
  * Servlet implementation class ProductDisplayServlet
