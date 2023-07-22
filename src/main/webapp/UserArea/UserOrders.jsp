@@ -18,8 +18,7 @@
 		ArrayList<Order> result = (ArrayList<Order>) orderHandler.getUserOrders((String) request.getSession().getAttribute("user"));
 		for(Order i : result){
 			try{%>
-			<tr><td><%= i.getId() %></td><td><%= i.getDate() %></td><td><%= i.getPrice() %></td></tr>
-			<tr><td><%= i.getDescription() %></td></tr>
+			<tr><td><%= i.getId() %></td><td><%= i.getDate() %></td><td><%= i.getPrice() %></td><td><%= i.getDescription() %></td></tr>
 			<%} catch (final IOException e){
 				e.getMessage();
 			}
