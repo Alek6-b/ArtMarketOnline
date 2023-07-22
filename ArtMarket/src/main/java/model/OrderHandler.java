@@ -5,12 +5,13 @@ import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class OrderHandler extends ArtMarketResourceHandler{
 	public OrderHandler() throws SQLException{
 		super();
 	}
-	public ArrayList<Order> getUserOrders(String user) throws SQLException {
+	public List<Order> getUserOrders(String user) throws SQLException {
     	PreparedStatement query = con.prepareStatement("SELECT * FROM Ordine WHERE Ordine.Utente = ? ORDER BY Ordine.DataOrdine");
     	query.setString(1, user);
     	query.execute();
@@ -23,8 +24,10 @@ public class OrderHandler extends ArtMarketResourceHandler{
 	}
 	
 	
-	public void makeOrder(String user, ArrayList<CartItem> cart, BigDecimal deliveryFee) throws SQLException {
-    	PreparedStatement orderQuery = con.prepareStatement("INSERT INTO Order(Utente,Prezzo,Descrizione) VALUES (?,?,?)");
+	public void makeOrder(String user, List<CartItem> cart, BigDecimal deliveryFee) throws SQLException {
+		try(    	PreparedStatement orderQuery = con.prepareStatement("INSERT INTO Order(Utente,Prezzo,Descrizione) VALUES (?,?,?)");
+		    	PreparedStatement includeQuery = con.prepareStatement("INSERT INTO Include(Ordine,Prodotto) VALUES (?,?)");){
+
     	orderQuery.setString(1, user);
     	
     	//calcola prezzo
@@ -33,8 +36,8 @@ public class OrderHandler extends ArtMarketResourceHandler{
     	for(CartItem i : cart) {
     		BigDecimal a = i.getProduct().getPrice();
     		int b = i.getQuantity();
-    		sum.add(a.multiply(BigDecimal.valueOf(b)));
-    		desc+=i.toString()+"\n";
+    		sum = sum.add(a.multiply(BigDecimal.valueOf(b)));
+    		desc+=i.toString();
     	}
     	
     	orderQuery.setBigDecimal(2, sum);
@@ -43,9 +46,7 @@ public class OrderHandler extends ArtMarketResourceHandler{
     	ResultSet rs = orderQuery.getGeneratedKeys();
     	rs.next();
     	int id = rs.getInt(1);
-    	orderQuery.close();
     	
-    	PreparedStatement includeQuery = con.prepareStatement("INSERT INTO Include(Ordine,Prodotto) VALUES (?,?)");
     	includeQuery.setInt(1, id);
     	
 		for(CartItem i : cart) {
@@ -53,8 +54,10 @@ public class OrderHandler extends ArtMarketResourceHandler{
 			includeQuery.setInt(2, p.getId());
 			includeQuery.execute();
 		}
+		
 	}
-	public void makeOrder(String user, ArrayList<CartItem> cart) throws SQLException {
+	}
+	public void makeOrder(String user, List<CartItem> cart) throws SQLException {
 		makeOrder(user,cart, new BigDecimal(0));
 	}
 

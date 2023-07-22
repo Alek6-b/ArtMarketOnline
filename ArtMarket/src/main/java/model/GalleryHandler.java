@@ -7,10 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GalleryHandler {
-	Connection con = new DataSourceHandler("jdbc:mysql://localhost:3306/artmarketonline", "ArtMarketOnlineManager",
-			"Prodotti").getConnection();
-
+public class GalleryHandler extends ArtMarketResourceHandler {
 	public GalleryHandler() throws SQLException {
 		super();
 	}

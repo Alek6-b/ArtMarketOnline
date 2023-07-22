@@ -16,4 +16,7 @@ public class CartItem {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	public String toString() {
+		return (product.getPiece().getTitle()+", "+product.getFormat()+", Quantità: "+quantity+"\n");
+	}
 }
