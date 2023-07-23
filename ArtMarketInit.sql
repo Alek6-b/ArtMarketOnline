@@ -78,10 +78,10 @@ INSERT INTO Formato VALUES ("PosterGrande", "40x30", "Poster");
 INSERT INTO Formato VALUES ("PlaccaPiccola", "40x30", "Metallo");
 
 
-INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Fantasy", "/ArtMarket/images/img1.png");
+INSERT INTO Opera(Titolo, UrlImmagine,Autore) VALUES ("Fantasy", "/ArtMarket/images/img1.png","Tizio");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Japan", "/ArtMarket/images/img2.png");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Lions", "/ArtMarket/images/img3.png");
-INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("BigApple", "/ArtMarket/images/img4.png");
+INSERT INTO Opera(Titolo, UrlImmagine,Autore) VALUES ("BigApple", "/ArtMarket/images/img4.png","Tizio");
 INSERT INTO Opera(Titolo,UrlImmagine) VALUES ("Saiyan", "/ArtMarket/images/img5.png");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Winter", "/ArtMarket/images/img6.png");
 INSERT INTO Opera(Titolo, UrlImmagine) VALUES ("Magic", "/ArtMarket/images/img7.png");
