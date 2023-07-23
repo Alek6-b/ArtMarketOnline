@@ -1,0 +1,15 @@
+
++model.Product#getFormat()Ljava/lang/String;R
+HC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/Product.java ("1*š
+1	 (e
+c
+	 (
+%0java.lang.String"__id*9
+
+__unknown_file (*
+model.Product"
+format"$
+ (
+
+%0java.lang.StringB
+model.ProductH

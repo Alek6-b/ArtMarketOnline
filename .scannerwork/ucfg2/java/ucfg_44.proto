@@ -1,0 +1,91 @@
+
+@model.UserHandler#isAdmin(Ljava/lang/String;)Ljava/lang/Boolean;V
+LC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/UserHandler.java ("8*Ω
+2$ $(®•
+$ $((
+%6boolean"!java.sql.ResultSet#getBoolean(I)Z*6
+
+__unknown_file (
+
+rsjava.sql.ResultSet* 
+
+__unknown_file (22getBoolean(I)*
+1*Ù
+4# #('d
+b
+# #('
+rsjava.sql.ResultSet"__id*6
+
+__unknown_file (
+
+%4java.sql.ResultSetwu
+$ $(
+%5boolean"java.sql.ResultSet#next()Z*6
+
+__unknown_file (
+
+rsjava.sql.ResultSet2next()*
+2
+1*∆
+5# #(±Æ
+# #(&
+%4java.sql.ResultSet"5java.sql.Statement#getResultSet()Ljava/sql/ResultSet;*A
+
+__unknown_file (%
+#
+queryjava.sql.PreparedStatement2getResultSet()*
+4*¶
+6" "(ëé
+" "(
+%3boolean"%java.sql.PreparedStatement#execute()Z*A
+
+__unknown_file (%
+#
+queryjava.sql.PreparedStatement2	execute()*
+5*†
+7   (bw
+u
+   (b#
+queryjava.sql.PreparedStatement"__id*>
+
+__unknown_file ("
+ 
+%1java.sql.CallableStatementíè
+! !(
+
+%2void":java.sql.PreparedStatement#setString(ILjava/lang/String;)V*A
+
+__unknown_file (%
+#
+queryjava.sql.PreparedStatement* 
+
+__unknown_file (2*6
+
+__unknown_file (
+
+userjava.lang.String2setString(ILjava/lang/String;)*
+6*™
+8 !  ($i
+g
+ !  ($
+%0java.sql.Connection"__id*:
+
+__unknown_file (*
+model.UserHandler"
+con™ß
+ !  (b 
+%1java.sql.CallableStatement"Ojava.sql.Connection#prepareCall(Ljava/lang/String;)Ljava/sql/CallableStatement;*7
+
+__unknown_file (
+
+%0java.sql.Connection*N
+
+__unknown_file (20
+.SELECT Admin FROM Utente WHERE Utente.Nome = ?2prepareCall(Ljava/lang/String;)*
+7*!
+1$ $(*"
+$ $(*
+"":$
+ (#
+userjava.lang.StringB
+model.UserHandlerH

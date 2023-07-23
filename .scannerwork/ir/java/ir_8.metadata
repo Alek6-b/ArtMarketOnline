@@ -1,0 +1,1 @@
+model.Order#getPrice()Ljava/math/BigDecimal;

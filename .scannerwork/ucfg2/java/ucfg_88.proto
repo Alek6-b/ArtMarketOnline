@@ -1,0 +1,55 @@
+
+Vorg.apache.jsp.Footer_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;a
+WC:\Users\utente\git\ArtMarket\ArtMarket\.scannerwork\jsp\org\apache\jsp\Footer_jsp.java>+ >(B"5*•
+2B! B($‘
+Ž
+B! B(x
+%2"…org.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*P
+
+__unknown_file (4"2
+0org.apache.jasper.runtime.InstanceManagerFactory*"
+
+__unknown_file (
+""m
+k
+B
+ B(x5
+org.apache.jsp.Footer_jsp"
+_jsp_instancemanager"__id*"
+
+__unknown_file (
+
+%2*
+1*©
+3A A( ‘
+Ž
+A A( '
+%1!org.apache.tomcat.InstanceManager"__id*S
+
+__unknown_file (7*5
+org.apache.jsp.Footer_jsp"
+_jsp_instancemanager*
+2
+1*©
+5? ?(‘
+Ž
+? ?('
+%0!org.apache.tomcat.InstanceManager"__id*S
+
+__unknown_file (7*5
+org.apache.jsp.Footer_jsp"
+_jsp_instancemanager*
+3
+1*Ø
+1F F(‘
+Ž
+F F('
+%3!org.apache.tomcat.InstanceManager"__id*S
+
+__unknown_file (7*5
+org.apache.jsp.Footer_jsp"
+_jsp_instancemanager"5
+F F( )
+'
+%3!org.apache.tomcat.InstanceManagerB
+org.apache.jsp.Footer_jspH

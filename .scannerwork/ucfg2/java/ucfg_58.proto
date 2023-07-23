@@ -1,0 +1,15 @@
+
+.model.Product#getPrice()Ljava/math/BigDecimal;R
+HC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/Product.java ("1*¡
+1 	  (h
+f
+ 	  (
+%0java.math.BigDecimal"__id*8
+
+__unknown_file (*
+model.Product"
+price"(
+   (
+
+%0java.math.BigDecimalB
+model.ProductH

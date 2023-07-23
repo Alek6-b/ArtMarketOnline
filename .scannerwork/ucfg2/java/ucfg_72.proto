@@ -1,0 +1,64 @@
+
+Torg.apache.jsp.Home_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;_
+UC:\Users\utente\git\ArtMarket\ArtMarket\.scannerwork\jsp\org\apache\jsp\Home_jsp.javaJ+ J(B"5*ø
+2N! N($ƒ¡
+Ne N(w!
+%2javax.servlet.ServletConfig"Ejavax.servlet.Servlet#getServletConfig()Ljavax/servlet/ServletConfig;*7
+
+__unknown_file (
+org.apache.jsp.Home_jsp2getServletConfig()—
+Œ
+N! N(x'
+%3!org.apache.tomcat.InstanceManager"Öorg.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*P
+
+__unknown_file (4"2
+0org.apache.jasper.runtime.InstanceManagerFactory*?
+
+__unknown_file (#
+!
+%2javax.servlet.ServletConfigè
+å
+N
+ N(x3
+org.apache.jsp.Home_jsp"
+_jsp_instancemanager"__id*E
+
+__unknown_file ()
+'
+%3!org.apache.tomcat.InstanceManager*
+1*ß
+3M M( è
+å
+M M( '
+%1!org.apache.tomcat.InstanceManager"__id*Q
+
+__unknown_file (5*3
+org.apache.jsp.Home_jsp"
+_jsp_instancemanager*
+2
+1*ß
+5K K(è
+å
+K K('
+%0!org.apache.tomcat.InstanceManager"__id*Q
+
+__unknown_file (5*3
+org.apache.jsp.Home_jsp"
+_jsp_instancemanager*
+3
+1*÷
+1R R(è
+å
+R R('
+%4!org.apache.tomcat.InstanceManager"__id*Q
+
+__unknown_file (5*3
+org.apache.jsp.Home_jsp"
+_jsp_instancemanager"5
+R R( )
+'
+%4!org.apache.tomcat.InstanceManager:*
+
+__unknown_file (
+%jsp_contextB
+org.apache.jsp.Home_jspH

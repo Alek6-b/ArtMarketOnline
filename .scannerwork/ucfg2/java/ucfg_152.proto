@@ -1,0 +1,55 @@
+
+Torg.apache.jsp.Cart_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;_
+UC:\Users\utente\git\ArtMarket\ArtMarket\.scannerwork\jsp\org\apache\jsp\Cart_jsp.javaN+ N(B"5*ì
+2R! R($ë
+é
+R! R(x
+%2"Öorg.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*P
+
+__unknown_file (4"2
+0org.apache.jasper.runtime.InstanceManagerFactory*"
+
+__unknown_file (
+""k
+i
+R
+ R(x3
+org.apache.jsp.Cart_jsp"
+_jsp_instancemanager"__id*"
+
+__unknown_file (
+
+%2*
+1*ß
+3Q Q( è
+å
+Q Q( '
+%1!org.apache.tomcat.InstanceManager"__id*Q
+
+__unknown_file (5*3
+org.apache.jsp.Cart_jsp"
+_jsp_instancemanager*
+2
+1*ß
+5O O(è
+å
+O O('
+%0!org.apache.tomcat.InstanceManager"__id*Q
+
+__unknown_file (5*3
+org.apache.jsp.Cart_jsp"
+_jsp_instancemanager*
+3
+1*÷
+1V V(è
+å
+V V('
+%3!org.apache.tomcat.InstanceManager"__id*Q
+
+__unknown_file (5*3
+org.apache.jsp.Cart_jsp"
+_jsp_instancemanager"5
+V V( )
+'
+%3!org.apache.tomcat.InstanceManagerB
+org.apache.jsp.Cart_jspH

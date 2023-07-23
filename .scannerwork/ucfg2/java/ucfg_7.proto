@@ -1,0 +1,15 @@
+
+,model.Order#getPrice()Ljava/math/BigDecimal;P
+FC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/Order.java0 0("1*Ÿ
+11	 1(f
+d
+1	 1(
+%0java.math.BigDecimal"__id*6
+
+__unknown_file (*
+model.Order"
+price"(
+1 1(
+
+%0java.math.BigDecimalB
+model.OrderH

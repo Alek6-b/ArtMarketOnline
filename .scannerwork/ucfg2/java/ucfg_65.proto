@@ -1,0 +1,97 @@
+
++model.CartItem#toString()Ljava/lang/String;S
+IC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/CartItem.java ("1*€	
+1
+ (d
+b
+
+ (
+%0model.Product"__id*;
+
+__unknown_file (*
+model.CartItem"	
+productÜÉ
+
+ (
+%1model.Piece"%model.Product#getPiece()Lmodel/Piece;*1
+
+__unknown_file (
+
+%0model.Product2
+getPiece()åâ
+
+ ('
+%2java.lang.String"(model.Piece#getTitle()Ljava/lang/String;*/
+
+__unknown_file (
+
+%1model.Piece2
+getTitle()h
+f
+
+ (,
+%3java.lang.String"__concat*$
+
+ ('
+
+%2java.lang.String*
+( (,
+, d
+b
+- (4
+%4model.Product"__id*;
+
+__unknown_file (*
+model.CartItem"	
+productíè
+- (@
+%5java.lang.String"+model.Product#getFormat()Ljava/lang/String;*1
+
+__unknown_file (
+
+%4model.Product2getFormat()z
+x
+
+ (@
+%6java.lang.String"__concat*$
+
+ (,
+
+%3java.lang.String*$
+- (@
+
+%5java.lang.Strings
+q
+
+ (O
+%7java.lang.String"__concat*$
+
+ (@
+
+%6java.lang.String*
+A (O
+, Quantit√†: h
+f
+
+ (X
+%8java.lang.String"__concat*$
+
+ (O
+
+%7java.lang.String*
+P (X
+""h
+f
+
+ (]
+%9java.lang.String"__concat*$
+
+ (X
+
+%8java.lang.String*
+Y (]
+\n"$
+ (_
+
+%9java.lang.StringB
+model.CartItemH

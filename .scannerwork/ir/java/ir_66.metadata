@@ -1,0 +1,2 @@
+model.ArtMarketResourceHandler#<init>()V
+java.sql.DriverManager#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;

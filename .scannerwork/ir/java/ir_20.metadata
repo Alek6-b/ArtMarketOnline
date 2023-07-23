@@ -1,0 +1,5 @@
+model.OrderHandler#getUserOrders(Ljava/lang/String;)Ljava/util/List;
+java.util.ArrayList#<init>()V
+model.Order#instance-init#
+java.util.ArrayList#instance-init#
+model.Order#<init>(ILjava/lang/String;Ljava/sql/Date;Ljava/math/BigDecimal;Ljava/lang/String;)V

@@ -1,0 +1,33 @@
+
+%model.Order#compareTo(Lmodel/Order;)IP
+FC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/Order.java@ @("1*¬
+1A	 A(^
+\
+A	 A(
+%0java.sql.Date"__id*5
+
+__unknown_file (*
+model.Order"
+date^
+\
+A A(!
+%1java.sql.Date"__id*5
+
+__unknown_file (*
+model.Order"
+dateÈÅ
+A	 A("	
+%2int"+java.util.Date#compareTo(Ljava/util/Date;)I*1
+
+__unknown_file (
+
+%0java.sql.Date*1
+
+__unknown_file (
+
+%1java.sql.Date2compareTo(Ljava/util/Date;)"
+A A(#
+"":
+@ @(
+omodel.OrderB
+model.OrderHP

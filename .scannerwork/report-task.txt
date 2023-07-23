@@ -1,0 +1,7 @@
+organization=alek6-b
+projectKey=Alek6-b_ArtMarketOnline
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.44209
+dashboardUrl=https://sonarcloud.io/dashboard?id=Alek6-b_ArtMarketOnline
+ceTaskId=AYmCMEJEoNdoa8VPMIIz
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYmCMEJEoNdoa8VPMIIz

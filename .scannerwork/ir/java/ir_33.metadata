@@ -1,0 +1,2 @@
+model.UserFilter#doFilter(LServletRequest;LServletResponse;LFilterChain;)V
+java.lang.String#contains(Ljava/lang/CharSequence;)Z

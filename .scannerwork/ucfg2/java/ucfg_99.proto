@@ -1,0 +1,1281 @@
+
+vorg.apache.jsp.Piece_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V`
+VC:\Users\utente\git\ArtMarket\ArtMarket\.scannerwork\jsp\org\apache\jsp\Piece_jsp.javad d("startingBlock*À
+24K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp- -(AÒÓ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp- -(A
+%110"&javax.servlet.jsp.JspWriter#print([C)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+""2	print([C)*
+23*˙
+26K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp, -(A†ù
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp, -(A
+%109void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*8
+
+__unknown_file (
+\r\n						<option value=2write(Ljava/lang/String;)*
+24*’
+28K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp& &(^˜Ù
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp' *(
+%108void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*é
+
+__unknown_file (rp
+n\r\n					<select name=\"selectProduct\" id=\"selectProduct\"\r\n						onchange=\"func(this.value)\">\r\n						2write(Ljava/lang/String;)*
+26
+18*Ì
+130
+Ä Ä( ]
+[
+
+Ä Ä( #
+%13javax.servlet.jsp.JspFactory"__id*"
+
+__unknown_file (
+""Û
+
+Ä Å( 
+%14"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*A
+
+__unknown_file (%
+#
+%13javax.servlet.jsp.JspFactory*8
+
+__unknown_file (
+org.apache.jsp.Piece_jsp*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest*P
+
+__unknown_file (4
+2
+response&javax.servlet.http.HttpServletResponse*"
+
+__unknown_file (
+""* 
+
+__unknown_file (2*!
+
+__unknown_file (2Ä@* 
+
+__unknown_file (22ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+129*´
+131 (íè
+ (>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*P
+
+__unknown_file (4
+2
+response&javax.servlet.http.HttpServletResponse*=
+
+__unknown_file (!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+130*ß
+132t t(4d
+b
+t t(4,
+pageContextjavax.servlet.jsp.PageContext"__id*"
+
+__unknown_file (
+""Z
+X
+x x(+"
+outjavax.servlet.jsp.JspWriter"__id*"
+
+__unknown_file (
+""`
+^
+z z(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*"
+
+__unknown_file (
+""k
+i
+{ {(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*"
+
+__unknown_file (
+""*
+131*£
+133n n(÷”
+n n(>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*P
+
+__unknown_file (4
+2
+response&javax.servlet.http.HttpServletResponse*%
+
+__unknown_file (	
+Allow*8
+
+__unknown_file (
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)B
+@
+o o(D
+
+%10int"__id*"
+
+__unknown_file (
+""‡›
+	o o(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*P
+
+__unknown_file (4
+2
+response&javax.servlet.http.HttpServletResponse*(
+
+__unknown_file (
+
+
+%10int*_
+
+__unknown_file (CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"
+p p(
+""*Í
+134mJ m(PÃ…
+mJ m(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*$
+
+__unknown_file (
+HEAD*>
+
+__unknown_file ("
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+
+132
+133*Í
+135m* m(0Ã…
+m* m(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*$
+
+__unknown_file (
+POST*>
+
+__unknown_file ("
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+
+134
+132*È
+136m m(À»
+m m(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*#
+
+__unknown_file (
+GET*>
+
+__unknown_file ("
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+
+135
+132*¸
+137j j(÷”
+j j(>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*P
+
+__unknown_file (4
+2
+response&javax.servlet.http.HttpServletResponse*%
+
+__unknown_file (	
+Allow*8
+
+__unknown_file (
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"
+k k(
+""*£
+138h, h(3«ƒ
+h, h(?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()j
+h
+h h(@ 
+_jspx_methodjava.lang.String"__id*4
+
+__unknown_file (
+
+%3java.lang.StringœÃ
+i
+ i((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*'
+
+__unknown_file (	
+OPTIONS*>
+
+__unknown_file ("
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+
+136
+137*À
+139g	 g(Z
+X
+g	 g(+"
+%0javax.servlet.DispatcherType"__id*"
+
+__unknown_file (
+""Ê„
+g3 g(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()ËÂ
+g	 g(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*@
+
+__unknown_file ($
+"
+%0javax.servlet.DispatcherType*@
+
+__unknown_file ($
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+
+138
+132*¡
+30K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp! %(Á‰
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp! %(
+%107void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*
+
+__unknown_file (ca
+_>\r\n			</div>\r\n			<div>\r\n\r\n				<form action=\"AddCartServlet\" method=\"post\">\r\n					2write(Ljava/lang/String;)*
+28*π
+74K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp! (.ﬂ
+‹
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+%69java.lang.Object"Yjava.beans.Beans#instantiate(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;*0
+
+__unknown_file ("
+java.beans.Beans*:
+
+__unknown_file (
+
+%68java.lang.ClassLoader*-
+
+__unknown_file (
+model.Product*
+67*À
+31K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp   (CÒÓ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp   (C
+%106"&javax.servlet.jsp.JspWriter#print([C)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+""2	print([C)*
+30*≈
+75I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>ÌÍ
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+%68java.lang.ClassLoader"7java.lang.Class#getClassLoader()Ljava/lang/ClassLoader;*4
+
+__unknown_file (
+
+%67java.lang.Class2getClassLoader()*
+74*≤
+76I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>⁄◊
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+%67java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*8
+
+__unknown_file (
+org.apache.jsp.Piece_jsp2
+getClass()*
+75*Â
+33
+· ·(	Ã…
+
+· ·(
+%105void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*%
+
+__unknown_file (	
+ src=2write(Ljava/lang/String;)*
+31*À
+34K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp   (CÒÓ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp   (C
+%104"&javax.servlet.jsp.JspWriter#print([C)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+""2	print([C)*
+33*´
+79I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>Ñ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+
+%65int"__id*"
+
+__unknown_file (
+""»
+≈
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+%66java.lang.Object"__mapGet*,
+
+__unknown_file (
+
+%jsp_context*'
+
+__unknown_file (	
+product*
+76
+66*’
+36K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp  (C˚¯
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp  (C
+%103void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*í
+
+__unknown_file (vt
+r</h1>\r\n	<div class=\"row\">\r\n		<div class=\"mainColumn\">\r\n			<div id=\"operaSelezionata\">\r\n				<img alt=2write(Ljava/lang/String;)*
+34*À
+37K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (0ÒÓ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (0
+%102"&javax.servlet.jsp.JspWriter#print([C)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+""2	print([C)*
+36*˛
+39K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp ((§°
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (0
+%101void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*<
+
+__unknown_file ( 
+\r\n	<h1 id=\"titoloOpera\">2write(Ljava/lang/String;)*
+37*∏
+104K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (*›
+⁄
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+%39java.lang.Object"Yjava.beans.Beans#instantiate(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;*0
+
+__unknown_file ("
+java.beans.Beans*:
+
+__unknown_file (
+
+%38java.lang.ClassLoader*+
+
+__unknown_file (
+model.Piece*
+97*«
+105I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:ÌÍ
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+%38java.lang.ClassLoader"7java.lang.Class#getClassLoader()Ljava/lang/ClassLoader;*4
+
+__unknown_file (
+
+%37java.lang.Class2getClassLoader()*
+104*¥
+106I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:⁄◊
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+%37java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*8
+
+__unknown_file (
+org.apache.jsp.Piece_jsp2
+getClass()*
+105*ø
+80
+≥ ≥(	¶£
+
+≥ ≥(
+%64void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\n2write(I)*
+79*ø
+81
+≤ ≤(	¶£
+
+≤ ≤(
+%63void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\r2write(I)*
+80*´
+109I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:Ñ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+
+%35int"__id*"
+
+__unknown_file (
+""∆
+√
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+%36java.lang.Object"__mapGet*,
+
+__unknown_file (
+
+%jsp_context*%
+
+__unknown_file (	
+piece*	
+106
+96*¿
+82I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (LÑ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+
+%61int"__id*"
+
+__unknown_file (
+""·
+ﬁ
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+%62"__mapSet*,
+
+__unknown_file (
+
+%jsp_context*.
+
+__unknown_file (
+productHandler*"
+
+__unknown_file (
+""*
+81*Ö
+41K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (´
+®
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (
+idStringjava.lang.String"__id*5
+
+__unknown_file (
+
+%99java.lang.String˝
+˙
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (
+%100int"/java.lang.Integer#parseInt(Ljava/lang/String;)I*1
+
+__unknown_file ("
+java.lang.Integer*:
+
+__unknown_file (
+
+idStringjava.lang.String*
+39*≠
+42K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (”–
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp ('
+%99java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest*%
+
+__unknown_file (	
+piece2 getParameter(Ljava/lang/String;)*
+41*æ
+43
+◊ ◊(	•¢
+
+◊ ◊(
+%98void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*!
+
+__unknown_file (
+	2write(I)*
+42*ø
+44
+÷ ÷(	¶£
+
+÷ ÷(
+%97void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\n2write(I)*
+43*¿
+89K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp( (<Ê
+„
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+%54java.lang.Object"Yjava.beans.Beans#instantiate(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;*0
+
+__unknown_file ("
+java.beans.Beans*:
+
+__unknown_file (
+
+%53java.lang.ClassLoader*4
+
+__unknown_file (
+model.ProductHandler*
+82*¡
+45K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (Á‰
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (
+%96void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\r2write(I)*
+44*Í
+
+46L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp& M(è
+å
+
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp& M(
+%95void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*¶
+
+__unknown_file (âÜ
+É</i></a></li>\r\n				\r\n			</ul>\r\n		</nav>\r\n		\r\n</div>\r\n\r\n<div class=\"page\">\r\n		<nav>\r\n			<ul>\r\n				<li><a href=\"/ArtMarket/Home.jsp\">Home</a></li>\r\n				<li>\r\n				\r\n				<div class=\"dropdown\">\r\n					<button class=\"drop\">Categorie</button>\r\n					<div class=\"dropdown-content\">\r\n						<a href=\"/ArtMarket/Gallery.jsp?tag=Fantasy\">Fantasy</a>\r\n						<a href=\"/ArtMarket/Gallery.jsp?tag=Nature\">Nature</a>\r\n						<a href=\"/ArtMarket/Gallery.jsp?tag=Animals\">Animals</a>\r\n						<a href=\"/ArtMarket/Gallery.jsp?tag=World\">World</a>\r\n						<a href=\"/ArtMarket/Gallery.jsp?tag=PopCulture\">Pop Culture</a>\r\n					</div>\r\n				</div>\r\n				\r\n				</li>\r\n				<li><a href=\"#\">Chi siamo</a></li>\r\n				<li><form>\r\n  <input class=\"search\" type=\"search\" placeholder=\"Cerca\">\r\n  <i class=\"fa-solid fa-magnifying-glass\" style=\"color: #805ecb;\"></i>\r\n</form>\r\n</li>\r\n			</ul>\r\n		</nav>\r\n		\r\n				\r\n		\r\n</div>\r\n</header>\r\n<br>\r\n</body>\r\n</html>2write(Ljava/lang/String;)*
+45*Œ
+47M
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp% %(ÅÚÔ
+M
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp% %(Å
+%94"&javax.servlet.jsp.JspWriter#print([C)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+""2	print([C)*
+46*”
+49M
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp% %(Å˜Ù
+M
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp% %(Å
+%93void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*ç
+
+__unknown_file (qo
+m\r\n				<li><a href=\"/ArtMarket/Cart.jsp\"><i class=\"fa-solid fa-cart-shopping\" style=\"color: #9a5ecb;\">2write(Ljava/lang/String;)*
+47*¡
+110
+ó ó(	¶£
+
+ó ó(
+%34void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\n2write(I)*
+109*¡
+111
+ñ ñ(	¶£
+
+ñ ñ(
+%33void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\r2write(I)*
+110*¿
+112I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (HÑ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+
+%31int"__id*"
+
+__unknown_file (
+""ﬂ
+‹
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+%32"__mapSet*,
+
+__unknown_file (
+
+%jsp_context*,
+
+__unknown_file (
+pieceHandler*"
+
+__unknown_file (
+""*
+111*≈
+90I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (LÌÍ
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+%53java.lang.ClassLoader"7java.lang.Class#getClassLoader()Ljava/lang/ClassLoader;*4
+
+__unknown_file (
+
+%52java.lang.Class2getClassLoader()*
+89*≤
+91I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L⁄◊
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+%52java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*8
+
+__unknown_file (
+org.apache.jsp.Piece_jsp2
+getClass()*
+90*¿
+119K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp& (8‰
+·
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+%24java.lang.Object"Yjava.beans.Beans#instantiate(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;*0
+
+__unknown_file ("
+java.beans.Beans*:
+
+__unknown_file (
+
+%23java.lang.ClassLoader*2
+
+__unknown_file (
+model.PieceHandler*
+112*≤
+94I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (LÑ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+
+%50int"__id*"
+
+__unknown_file (
+""œ
+Ã
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (L
+%51java.lang.Object"__mapGet*,
+
+__unknown_file (
+
+%jsp_context*.
+
+__unknown_file (
+productHandler*
+91
+81*©
+50L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp# #(ŒÀ
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp# $(	
+%92void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*f
+
+__unknown_file (JH
+F</a>!</li>\r\n				<li><a href=\"LogoutServlet\">Logout</a><li>\r\n				2write(Ljava/lang/String;)*
+49*ø
+95
+• •(	¶£
+
+• •(
+%49void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\n2write(I)*
+94*Ü
+51L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp" "(G´®
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp"6 "(:
+%91void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*6
+
+__unknown_file (
+
+userjava.lang.String2print(Ljava/lang/String;)*
+50*ø
+96
+§ §(	¶£
+
+§ §(
+%48void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+\r2write(I)*
+95*õ
+52L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp" "(G¿Ω
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp" "(G
+%90void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*X
+
+__unknown_file (<:
+8\r\n				<li>Hi <a href=\"/ArtMarket/UserArea/User.jsp\">2write(Ljava/lang/String;)*
+51*∑
+97I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:Ñ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+
+%46int"__id*"
+
+__unknown_file (
+""ÿ
+’
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (:
+%47"__mapSet*,
+
+__unknown_file (
+
+%jsp_context*%
+
+__unknown_file (	
+piece*"
+
+__unknown_file (
+""*
+96*Í
+53L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp !(èå
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp !(
+%89void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*¶
+
+__unknown_file (âÜ
+É\r\n				<a href=\"/ArtMarket/Login.jsp\">Accedi</a></li>\r\n				<li><a href=\"/ArtMarket/Register.jsp\">Registrati</a></li>\r\n				2write(Ljava/lang/String;)*
+49*á
+54L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (H®
+•
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (
+userjava.lang.String"__id*5
+
+__unknown_file (
+
+%88java.lang.Object*
+52
+53*£
+55L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (»
+≈
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp3 (?
+%88java.lang.Object"__mapGet*,
+
+__unknown_file (
+
+%jsp_context*$
+
+__unknown_file (
+user*
+54*Ö
+56L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (%™ß
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp& (0%
+%87javax.servlet.http.HttpSession"Rjavax.servlet.http.HttpServletRequest#getSession()Ljavax/servlet/http/HttpSession;*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest2getSession()*
+55*ô
+57L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (Hæª
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (H
+%86void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*’
+
+__unknown_file (∏µ
+≤\r\n\r\n\r\n<header>\r\n<div id=\"header\">\r\n		<nav>\r\n			<ul>\r\n				<li><img src=\"/ArtMarket/images/logoTsw0.png\" alt=\"Homepage\"></li>\r\n				<li class=\"head\">\r\n				2write(Ljava/lang/String;)*
+56*µ
+58L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp' (+⁄
+◊
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (%
+%85"__mapSet*,
+
+__unknown_file (
+
+%jsp_context*$
+
+__unknown_file (
+cart*"
+
+__unknown_file (
+""*
+57*Ö
+59L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (™ß
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (%
+%84javax.servlet.http.HttpSession"Rjavax.servlet.http.HttpServletRequest#getSession()Ljavax/servlet/http/HttpSession;*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest2getSession()*
+58*˜
+16K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp: <(ûõ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp: <(
+%116void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*6
+
+__unknown_file (
+\r\n</body>\r\n</html>2write(Ljava/lang/String;)*
+1*¿
+17L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Footer.jsp (Â‚
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Footer.jsp (
+%115void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*˚
+
+__unknown_file (ﬁ€
+ÿ\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"ISO-8859-1\">\r\n<title>Insert title here</title>\r\n</head>\r\n<body>\r\n<footer>¬©2023 Art Market Online\r\n<p>\r\n<i class=\"fa-brands fa-facebook\"></i>\r\n<i class=\"fa-brands fa-twitter\"></i>\r\n<i class=\"fa-brands fa-instagram\"></i>\r\n<p>\r\n</footer>	\r\n</body>\r\n</html>2write(Ljava/lang/String;)*
+16*‹
+18K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp0 :( Çˇ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp0 :( 
+%114void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*ô
+
+__unknown_file (¸˘
+ˆ\r\n					</select> <input type=\"number\" min=1 value=1 id=\"quantity\" name=\"quantity\"> <input\r\n						type=\"submit\" value=\"Aggiungi\">\r\n				</form>\r\n			</div>\r\n			<div id=\"productDisplay\"></div>\r\n\r\n		</div>\r\n\r\n	</div>\r\n	2write(Ljava/lang/String;)*
+17*«
+120I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (HÌÍ
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+%23java.lang.ClassLoader"7java.lang.Class#getClassLoader()Ljava/lang/ClassLoader;*4
+
+__unknown_file (
+
+%22java.lang.Class2getClassLoader()*
+119*¥
+121I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H⁄◊
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+%22java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*8
+
+__unknown_file (
+org.apache.jsp.Piece_jsp2
+getClass()*
+120*(
+0 "!
+
+á á(
+implicit return*≥
+1
+Ö Ö(^
+\
+
+Ö Ö($
+%124javax.servlet.jsp.JspFactory"__id*"
+
+__unknown_file (
+""ºπ
+
+Ö Ö(9
+%125void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*B
+
+__unknown_file (&
+$
+%124javax.servlet.jsp.JspFactory*Q
+
+__unknown_file (5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0*≥
+124I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (HÑ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+
+%20int"__id*"
+
+__unknown_file (
+""Õ
+ 
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+%21java.lang.Object"__mapGet*,
+
+__unknown_file (
+
+%jsp_context*,
+
+__unknown_file (
+pieceHandler*
+
+121
+111*R
+startingBlock	d d(Ö/-
+d d(
+%jsp_context"java.util.HashMap*
+139*©
+125
+Ü Ü( z
+x
+
+Ü Ü( "
+outjavax.servlet.jsp.JspWriter"__id*@
+
+__unknown_file ($
+"
+%18javax.servlet.jsp.JspWriterÄ
+~
+
+á á((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriterèå
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (H
+%19void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*(
+
+__unknown_file (
+
+\r\n\r\n2write(Ljava/lang/String;)*
+124*Ë
+126
+Ö Ö((Õ 
+
+Ü Ü( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*J
+
+__unknown_file (.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+125*˜
+127
+Ñ Ñ(-‹Ÿ
+
+Ö Ö((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*J
+
+__unknown_file (.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+126*˝
+128
+É É(3‚ﬂ
+
+Ñ Ñ(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*J
+
+__unknown_file (.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+127*É
+129
+Ä Å( g
+e
+
+Ä Å( ,
+pageContextjavax.servlet.jsp.PageContext"__id*#
+
+__unknown_file (
+
+%14ñ
+ì
+
+Ç Ç(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*J
+
+__unknown_file (.
+,
+pageContextjavax.servlet.jsp.PageContextÊ„
+
+É É(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*J
+
+__unknown_file (.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+128*Â
+61L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (%lj
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (%
+%82"java.util.ArrayListú
+ô
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (%
+%83"java.util.ArrayList#<init>()V*#
+
+__unknown_file (
+
+%82*
+59*ß
+63L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (»
+≈
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jspI (U
+%81java.lang.Object"__mapGet*,
+
+__unknown_file (
+
+%jsp_context*$
+
+__unknown_file (
+cart*
+59
+61*˘
+20K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp. .(õò
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp. .(
+%113void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*3
+
+__unknown_file (
+</option>\r\n						2write(Ljava/lang/String;)*
+26
+18*Ö
+64L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp4 (;™ß
+L
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp< (F%
+%80javax.servlet.http.HttpSession"Rjavax.servlet.http.HttpServletRequest#getSession()Ljavax/servlet/http/HttpSession;*N
+
+__unknown_file (2
+0
+request%javax.servlet.http.HttpServletRequest2getSession()*
+63*À
+21K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp- -(AÒÓ
+K
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp- -(A
+%112"&javax.servlet.jsp.JspWriter#print([C)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*"
+
+__unknown_file (
+""2	print([C)*
+20*©
+65J
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (–Õ
+J
+BC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Header.jsp (
+%79void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*È
+
+__unknown_file (Ã…
+∆\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Art Market Online</title>\r\n<link rel=\"stylesheet\" href=\"/ArtMarket/styles/mainStyle.css\" type=\"text/css\">\r\n<script src=\"https://kit.fontawesome.com/b99c5b4502.js\" crossorigin=\"anonymous\"></script>\r\n<meta charset=\"ISO-8859-1\">\r\n\r\n</head>\r\n<body>\r\n2write(Ljava/lang/String;)*
+64*Õ
+66I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp	 ( ıÚ
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp	 ( 
+%78void")java.io.Writer#write(Ljava/lang/String;)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*è
+
+__unknown_file (ÚÔ
+Ï\r\n\r\n\r\n\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"ISO-8859-1\">\r\n<title>ArtMarketOnline</title>\r\n<script type=\"text/javascript\" src=\"scripts/PieceInfoDisplayer.js\"></script>\r\n\r\n</head>\r\n<body>\r\n	2write(Ljava/lang/String;)*
+65*ø
+23
+Ì Ì(	¶£
+
+Ì Ì(
+%111void"java.io.Writer#write(I)V*@
+
+__unknown_file ($
+"
+outjavax.servlet.jsp.JspWriter*!
+
+__unknown_file (
+>2write(I)*
+21*π
+67I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>Ñ
+Å
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+
+%76int"__id*"
+
+__unknown_file (
+""⁄
+◊
+I
+AC:/Users/utente/git/ArtMarket/ArtMarket/src/main/webapp/Piece.jsp (>
+%77"__mapSet*,
+
+__unknown_file (
+
+%jsp_context*'
+
+__unknown_file (	
+product*"
+
+__unknown_file (
+""*
+66:<
+d d(N0
+request%javax.servlet.http.HttpServletRequest:?
+	dO d(Ñ2
+response&javax.servlet.http.HttpServletResponseB
+org.apache.jsp.Piece_jspH

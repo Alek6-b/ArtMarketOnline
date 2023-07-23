@@ -1,0 +1,55 @@
+
+Uorg.apache.jsp.Login_jsp#_jsp_getInstanceManager()Lorg/apache/tomcat/InstanceManager;`
+VC:\Users\utente\git\ArtMarket\ArtMarket\.scannerwork\jsp\org\apache\jsp\Login_jsp.javaJ+ J(B"5*î
+2N! N($ë
+é
+N! N(x
+%2"Öorg.apache.jasper.runtime.InstanceManagerFactory#getInstanceManager(Ljavax/servlet/ServletConfig;)Lorg/apache/tomcat/InstanceManager;*P
+
+__unknown_file (4"2
+0org.apache.jasper.runtime.InstanceManagerFactory*"
+
+__unknown_file (
+""l
+j
+N
+ N(x4
+org.apache.jsp.Login_jsp"
+_jsp_instancemanager"__id*"
+
+__unknown_file (
+
+%2*
+1*®
+3M M( ê
+ç
+M M( '
+%1!org.apache.tomcat.InstanceManager"__id*R
+
+__unknown_file (6*4
+org.apache.jsp.Login_jsp"
+_jsp_instancemanager*
+2
+1*®
+5K K(ê
+ç
+K K('
+%0!org.apache.tomcat.InstanceManager"__id*R
+
+__unknown_file (6*4
+org.apache.jsp.Login_jsp"
+_jsp_instancemanager*
+3
+1*◊
+1R R(ê
+ç
+R R('
+%3!org.apache.tomcat.InstanceManager"__id*R
+
+__unknown_file (6*4
+org.apache.jsp.Login_jsp"
+_jsp_instancemanager"5
+R R( )
+'
+%3!org.apache.tomcat.InstanceManagerB
+org.apache.jsp.Login_jspH

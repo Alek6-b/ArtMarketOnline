@@ -1,0 +1,60 @@
+
+^org.apache.jsp.UserArea.UserOrders_jsp#_jsp_getExpressionFactory()Ljavax/el/ExpressionFactory;n
+dC:\Users\utente\git\ArtMarket\ArtMarket\.scannerwork\jsp\org\apache\jsp\UserArea\UserOrders_jsp.javaF$ F(="5*¢
+2J" J(.Z
+X
+J" J(."
+%2javax.servlet.jsp.JspFactory"__id*"
+
+__unknown_file (
+""³°
+J" J(o
+%3"~javax.servlet.jsp.JspFactory#getJspApplicationContext(Ljavax/servlet/ServletContext;)Ljavax/servlet/jsp/JspApplicationContext;*@
+
+__unknown_file ($
+"
+%2javax.servlet.jsp.JspFactory*"
+
+__unknown_file (
+""28getJspApplicationContext(Ljavax/servlet/ServletContext;)|
+z
+	J
+ J(†C(
+&org.apache.jsp.UserArea.UserOrders_jsp"
+_el_expressionfactory"__id*"
+
+__unknown_file (
+""*
+1*°
+3I I(!˜
+•
+I I(! 
+%1javax.el.ExpressionFactory"__id*a
+
+__unknown_file (E*C(
+&org.apache.jsp.UserArea.UserOrders_jsp"
+_el_expressionfactory*
+2
+1*°
+5G G(˜
+•
+G G( 
+%0javax.el.ExpressionFactory"__id*a
+
+__unknown_file (E*C(
+&org.apache.jsp.UserArea.UserOrders_jsp"
+_el_expressionfactory*
+3
+1*Ø
+1N N( ˜
+•
+N N(  
+%4javax.el.ExpressionFactory"__id*a
+
+__unknown_file (E*C(
+&org.apache.jsp.UserArea.UserOrders_jsp"
+_el_expressionfactory".
+N N(!"
+ 
+%4javax.el.ExpressionFactoryB*(
+&org.apache.jsp.UserArea.UserOrders_jspH

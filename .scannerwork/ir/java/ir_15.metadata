@@ -1,0 +1,3 @@
+model.PieceHandler#getPiece(I)Lmodel/Piece;
+model.Piece#instance-init#
+model.Piece#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

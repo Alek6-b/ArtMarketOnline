@@ -1,0 +1,17 @@
+
+*model.CartItem#getProduct()Lmodel/Product;S
+IC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/CartItem.java
+ 
+("1*–
+1	 (d
+b
+	 (
+%0model.Product"__id*;
+
+__unknown_file (*
+model.CartItem"	
+product"!
+ (
+
+%0model.ProductB
+model.CartItemH

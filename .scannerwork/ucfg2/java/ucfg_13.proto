@@ -1,0 +1,133 @@
+
++model.PieceHandler#getPiece(I)Lmodel/Piece;W
+MC:/Users/utente/git/ArtMarket/ArtMarket/src/main/java/model/PieceHandler.java ("3*þ
+2 (èå
+ (.
+%6java.lang.String"Bjava.sql.ResultSet#getString(Ljava/lang/String;)Ljava/lang/String;*6
+
+__unknown_file (
+
+rsjava.sql.ResultSet*&
+
+__unknown_file (
+
+Titolo2getString(Ljava/lang/String;)èå
+0 (F
+%7java.lang.String"Bjava.sql.ResultSet#getString(Ljava/lang/String;)Ljava/lang/String;*6
+
+__unknown_file (
+
+rsjava.sql.ResultSet*&
+
+__unknown_file (
+
+Autore2getString(Ljava/lang/String;)íê
+H (c
+%8java.lang.String"Bjava.sql.ResultSet#getString(Ljava/lang/String;)Ljava/lang/String;*6
+
+__unknown_file (
+
+rsjava.sql.ResultSet*+
+
+__unknown_file (
+UrlImmagine2getString(Ljava/lang/String;),*
+ (
+%9model.Piece"model.PieceÙ
+Ö
+
+ (d
+%10"Lmodel.Piece#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*/
+
+__unknown_file (
+
+%9model.Piece*"
+
+__unknown_file (
+""*4
+
+__unknown_file (
+
+%6java.lang.String*4
+
+__unknown_file (
+
+%7java.lang.String*4
+
+__unknown_file (
+
+%8java.lang.String"
+ (e
+
+%9model.Piece*­
+
+3 (j
+h
+ (
+%0java.sql.Connection"__id*;
+
+__unknown_file (*
+model.PieceHandler"
+con°­
+ (^ 
+%1java.sql.PreparedStatement"Tjava.sql.Connection#prepareStatement(Ljava/lang/String;)Ljava/sql/PreparedStatement;*7
+
+__unknown_file (
+
+%0java.sql.Connection*J
+
+__unknown_file (.,
+*SELECT * FROM Opera WHERE Opera.Codice = ?2$prepareStatement(Ljava/lang/String;)w
+u
+ (_#
+queryjava.sql.PreparedStatement"__id*>
+
+__unknown_file ("
+ 
+%1java.sql.PreparedStatementÖÓ
+ (
+
+%2void"&java.sql.PreparedStatement#setInt(II)V*A
+
+__unknown_file (%
+#
+queryjava.sql.PreparedStatement* 
+
+__unknown_file (2*"
+
+__unknown_file (
+""2
+setInt(II)‘Ž
+ (
+%3boolean"%java.sql.PreparedStatement#execute()Z*A
+
+__unknown_file (%
+#
+queryjava.sql.PreparedStatement2	execute()±®
+ (%
+%4java.sql.ResultSet"5java.sql.Statement#getResultSet()Ljava/sql/ResultSet;*A
+
+__unknown_file (%
+#
+queryjava.sql.PreparedStatement2getResultSet()d
+b
+ (&
+rsjava.sql.ResultSet"__id*6
+
+__unknown_file (
+
+%4java.sql.ResultSetwu
+ (
+%5boolean"java.sql.ResultSet#next()Z*6
+
+__unknown_file (
+
+rsjava.sql.ResultSet2next()*
+2
+1*!
+1	 ("
+ (
+"": 
+
+__unknown_file (
+""B
+model.PieceHandlerH
