@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta name="viewport" content="initial-scale=1.0, width=device width">
 <title>ArtMarketOnline</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
 		<%
 		for (Piece i : pieces){
 			%>
-			<a href="/ArtMarket/Piece.jsp?piece=<%= i.getId()  %>"><img alt=<%= i.getTitle() %> src=<%= i.getImageSource() %>></a>
+			<a href="/ArtMarket/Piece.jsp?piece=<%= i.getId()  %>"><img  alt=<%= i.getTitle() %> src=<%= i.getImageSource() %>></a>
 			<%
 		}
 	%>

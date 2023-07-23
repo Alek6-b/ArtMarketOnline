@@ -11,11 +11,11 @@
 	Benvenuto <%= user %>!
 	<br>
 	<% if ((boolean) request.getSession().getAttribute("admin")){%>
-	<a href="/ArtMarket/UserArea/AdminArea/Admin.jsp">Go to Admin Page</a>
+	<a id="admin" href="/ArtMarket/UserArea/AdminArea/Admin.jsp">Go to Admin Page</a>
 	<%	
 	}
 	%>
-
+<br>
 	<a id="visualizza" href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>	
 		<%@include file="../Footer.jsp" %>
 	
