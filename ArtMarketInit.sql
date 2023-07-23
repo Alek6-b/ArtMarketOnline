@@ -92,7 +92,12 @@ INSERT INTO Tag(Opera,Categoria) VALUES (2,"Fantasy");
 INSERT INTO Tag(Opera,Categoria) VALUES (4,"Fantasy");
 INSERT INTO Tag(Opera,Categoria) VALUES (8,"Fantasy");
 
-
+INSERT INTO Tag(Opera,Categoria) VALUES (5,"PopCulture");
+INSERT INTO Tag(Opera,Categoria) VALUES (6,"Nature");
+INSERT INTO Tag(Opera,Categoria) VALUES (8,"Nature");
+INSERT INTO Tag(Opera,Categoria) VALUES (3,"Animals");
+INSERT INTO Tag(Opera,Categoria) VALUES (2,"World");
+INSERT INTO Tag(Opera,Categoria) VALUES (4,"World");
 
 
 INSERT INTO Prodotto(Opera,Prezzo,Formato) VALUES (1, 10.00,"TelaPiccola");

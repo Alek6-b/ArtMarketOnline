@@ -15,10 +15,10 @@
 	<%
 		String tag = request.getParameter("tag");
 	%>
-		<h1><%= tag %></h1>
+		<h1 id="tag"><%= tag %></h1>
 	<%
 		ArrayList<Piece> pieces = (ArrayList<Piece>) galleryHandler.getGallery(tag);%>
-		<h2>		<%= pieces.size() %> pezzi.
+		<h2 id="piece">		<%= pieces.size() %> pezzi
 		</h2>
 		<%
 		for (Piece i : pieces){

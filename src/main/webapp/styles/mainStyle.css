@@ -7,11 +7,12 @@ body{
    	font-family: Verdana, Geneva, sans-serif;
   	line-height: 1.2em;
   	color: #ffffff;
-  	  	
+  	
 }
 legend{
 	color: #ffffff;
 }
+
 header img{	
 	display: inline;
 	margin-right: 50px;	
@@ -30,15 +31,17 @@ i{
 	right: 10px;
 }
 
-.head{
-	margin-left:600px;
-	 font-weight: bold;  
-	
+.head a{
+	 margin-left:600px;
+	 font-weight: normal;
+	 font-family: Verdana, Geneva, sans-serif;  
+	 color: #9a5ecb;
+	 text-decoration: none;
 }
+
 header nav li{
   float: left;
   display: block;
-
 }
 	
 nav ul {
@@ -48,6 +51,13 @@ nav ul {
   color: #9a5ecb;
   background-color: #0A0A0A;
   overflow: hidden;    
+}
+
+#reg a{
+	 font-weight: normal;
+	 font-family: Verdana, Geneva, sans-serif;
+	 color: #9a5ecb;
+	 text-decoration: none;
 }
 
 #login input[type=text]{
@@ -106,6 +116,8 @@ nav li {
   display: inline-block;
   margin-right: 50px;
   font-size:1.2em;
+ 
+  
 }
 
 .page nav ul{
@@ -132,18 +144,22 @@ input li{
 
   }
   
-  section{
-  	padding: 200px;
+ /* section{
+  	padding: 500px;
   }
+  */
   
   footer{
 	background-color: #252525;
-	margin:100;
+	margin:0;
 	color: #9a5ecb;
-	padding:5px;
+	padding:0;
 	font-size:0.7em;
 	text-align: center;
 	width: 100%;
+	clear:both;
+	position:absolute;
+	
 }
 
 button{
@@ -183,3 +199,77 @@ button{
 .dropdown:hover .dropdown-content{
 	display:block;
 }
+
+.gallery{
+	
+	color: #9a5ecb;
+	
+}
+
+#tag{
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:italic;	
+}
+
+#piece{
+	font-size:20px;	
+}
+/*
+table {
+table-layout : fixed;
+width : 300px;
+border: 2px solid #808080;
+
+}
+*/
+caption{
+	background-color:#808080
+	 
+}
+
+#Prodotti {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Prodotti th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+caption {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#Prodotti td, #Prodotti th {
+  border: 1px solid #808080;
+  padding: 8px;
+}
+
+#conferma {
+	color: #9a5ecb;
+	text-decoration: none;
+	width:50px;
+	padding: 10px;
+	
+}
+
+#logout a{
+	color: #9a5ecb;
+	text-decoration: none;
+	
+}
+
+#visualizza{
+	color: #9a5ecb;
+	text-decoration: none;
+	
+}
+
