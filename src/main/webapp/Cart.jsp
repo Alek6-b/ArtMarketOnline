@@ -23,9 +23,9 @@
 	<td><%= i.getProduct().getPrice().multiply(BigDecimal.valueOf(i.getQuantity())) %>
 	</tr>
 	<%} %>
-	<%@include file="/Footer.jsp" %>
+	
 	</table>
-	<a href="/ArtMarket/OrderMakerServlet">Conferma Ordine</a>
+	<a id="conferma" href="/ArtMarket/OrderMakerServlet">Conferma Ordine</a>
 <%@include file="/Footer.jsp" %>
 </body>
 </html>

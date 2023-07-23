@@ -16,7 +16,7 @@
 	}
 	%>
 
-	<a href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>	
+	<a id="visualizza" href="/ArtMarket/UserArea/UserOrders.jsp">Vizualizza Ordini</a>	
 		<%@include file="../Footer.jsp" %>
 	
 </body>
