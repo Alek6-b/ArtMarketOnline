@@ -39,6 +39,14 @@ public class ProductHandler extends ArtMarketResourceHandler{
 
 	}
 
-	
+	public void makeProduct(Product p) throws SQLException {
+		try(PreparedStatement query = con.prepareStatement("INSERT INTO Prodotto(Opera, Formato,Prezzo) VALUES (?,?,?)")){
+			query.setInt(1, p.getPiece().getId());
+			query.setString(2, p.getFormat());
+			query.setBigDecimal(3, p.getPrice());
+			query.execute();
+		}
+	}
+
 	
 }

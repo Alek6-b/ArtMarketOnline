@@ -12,6 +12,13 @@ public class Product {
 		this.format = formato;
 		this.price = prezzo;
 	}
+	public Product(Piece opera, String formato, BigDecimal prezzo) {
+		this.id=-1;
+		this.piece = opera;
+		this.format = formato;
+		this.price = prezzo;
+	}
+
 	int id;
 	Piece piece;
 	String format;

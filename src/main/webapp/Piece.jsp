@@ -32,11 +32,12 @@
 				<img alt=<%=piece.getTitle()%> src=<%=piece.getImageSource()%>>
 			</div>
 			<div>
-
+			<% 					ArrayList<Product> prods = (ArrayList<Product>) productHandler.getPieceProducts(pieceId);
+			if(prods.size()==0){%>
+				<h2>Non disponibile</h2>
+			<%}else{
+			%>	<h2>Acquisto</h2>
 				<form action="AddCartServlet" method="post">
-					<%
-					ArrayList<Product> prods = (ArrayList<Product>) productHandler.getPieceProducts(pieceId);
-					%>
 					<select name="selectProduct" id="selectProduct"
 						onchange="func(this.value)">
 						<%
@@ -51,7 +52,7 @@
 				</form>
 			</div>
 			<div id="productDisplay"></div>
-
+			<%} %>
 		</div>
 
 	</div>

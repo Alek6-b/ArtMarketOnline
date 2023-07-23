@@ -31,6 +31,7 @@
 				<%} else {%>
 			    <h4>Hi&nbsp<a href="/ArtMarket/UserArea/User.jsp"><%= user %>!</a></h4>
 				<a id="logout" href="LogoutServlet">Logout</a>
+
 				<%}%>
 				<a href="/ArtMarket/Cart.jsp"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a>
 				
