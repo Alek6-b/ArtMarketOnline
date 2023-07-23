@@ -21,28 +21,25 @@
 
 <header>
 <div class="header">
-		<nav>
-			<ul>
-				<li><img src="/ArtMarket/images/logoTsw0.png" alt="Homepage"></li>
-				<li class="head">
+				<img src="/ArtMarket/images/logoTsw0.png" alt="Homepage">
+				<div class="nav">
 				<% String user = (String) request.getSession().getAttribute("user");
 					if (user==null) {
 				%>
-				<a href="/ArtMarket/Login.jsp">Accedi</a></li>
-				<li id="reg" ><a href="/ArtMarket/Register.jsp">Registrati</a></li>
+				<a id="accedi" href="/ArtMarket/Login.jsp">Accedi</a>
+				<a id="reg" href="/ArtMarket/Register.jsp">Registrati</a>
 				<%} else {%>
-				<li>Hi <a href="/ArtMarket/UserArea/User.jsp"><%= user %></a>!</li>
-				<li id="logout" ><a href="/ArtMarket/LogoutServlet">Logout</a><li>
+			    <h4>Hi&nbsp<a href="/ArtMarket/UserArea/User.jsp"><%= user %>!</a></h4>
+				<a id="logout" href="LogoutServlet">Logout</a>
+
 				<%}%>
-				<li><a href="/ArtMarket/Cart.jsp"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a></li>
+				<a href="/ArtMarket/Cart.jsp"><i class="fa-solid fa-cart-shopping" style="color: #9a5ecb;"><%=cart.size() %></i></a>
 				
-			</ul>
-		</nav>
-		
+		</div>
 </div>
 
 <div class="page">
-		<nav>
+		<nav class="nav-bar">
 			<ul>
 				<li><a href="/ArtMarket/Home.jsp">Home</a></li>
 				<li>
@@ -60,11 +57,7 @@
 				
 				</li>
 				<li><a href="#">Chi siamo</a></li>
-				<li><form>
-  <input class="search" type="search" placeholder="Cerca">
-  <i class="fa-solid fa-magnifying-glass" style="color: #805ecb;"></i>
-</form>
-</li>
+				
 			</ul>
 		</nav>
 		
